@@ -23,7 +23,7 @@ namespace TheLab.Controllers
             return View();
         }
 
-        public IActionResult ContactUs()
+        public IActionResult Contact()
         {
             return View();
         }
