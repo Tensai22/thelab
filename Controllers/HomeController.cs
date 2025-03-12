@@ -27,6 +27,16 @@ namespace TheLab.Controllers
         {
             return View();
         }
+        public IActionResult AboutUs() 
+        {
+            return View();
+        }
+        public IActionResult FAQ() 
+        {
+            return View();
+        }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

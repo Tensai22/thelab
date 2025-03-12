@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace TheLab.Views.FAQ
+namespace TheLab.Views.Home
 {
-    public class FAQModel : PageModel
+    public class AboutUsModel : PageModel
     {
         public void OnGet()
         {
