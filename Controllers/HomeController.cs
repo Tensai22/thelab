@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using TheLab.Models;
 
-
 namespace TheLab.Controllers
 {
     public class HomeController : Controller
@@ -28,40 +27,30 @@ namespace TheLab.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult Contact(Models.Message userMessage)
-        {
-            _logger.LogInformation("User {name} trying to send form to email {email}", userMessage.Name, userMessage.Email);
-
-            EmailSender sender = new EmailSender();
-
-            _logger.LogInformation("Starting data validation");
-            if (string.IsNullOrWhiteSpace(userMessage.Name))
-            {
-                ModelState.AddModelError("name", "Name field is required to fill");
-            }
-            if (ModelState.IsValid)
-            {
-                _logger.LogInformation("Form sent successfully");
-                return RedirectToAction("FAQ");
-            }
-            else
-            {
-                _logger.LogError("{name}, errors occured while sending form", userMessage.Name);
-                return View(userMessage);
-            }
-        }
-
-
-        public IActionResult AboutUs() 
+        public IActionResult AboutUs()
         {
             return View();
         }
-        public IActionResult FAQ() 
+        public IActionResult FAQ()
         {
             return View();
         }
 
+        public IActionResult Home3()
+        {
+            return View();
+        }
+
+        public IActionResult Home2()
+        {
+            return View();
+        }
+
+
+        public IActionResult Home1()
+        {
+            return View();
+        }
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
