@@ -1,14 +1,28 @@
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Serilog;
 using Serilog.Context;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 
 
+#region Login
 
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login";  // Страница входа
+        options.AccessDeniedPath = "/Account/AccessDenied"; // Страница отказа
+    });
+#endregion
+
+builder.Services.AddAuthorization();
+
+
+
+#region Logger
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("Logs/thelab.txt", rollingInterval: RollingInterval.Day)
@@ -20,9 +34,16 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
+#endregion
+
+
+
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseAuthentication();
+app.UseAuthorization();
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
