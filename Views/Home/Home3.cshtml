@@ -1,4 +1,5 @@
-﻿	<div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar white w-nav">
+﻿	<div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" 
+	class="navbar white w-nav">
 		<div class="nav-container w-container">
 			<div class="nav-menu-wrapper">
 				<a href="/home-1" class="brand w-nav-brand"><img loading="lazy" height="21" alt="logo" src="~/images/union-20-8-.svg" /></a>
@@ -107,14 +108,9 @@
 			</div>
 		</div>
 	</div>
-	<form action="/search" class="search-desktop w-form">
-		<div class="search-wrapper">
-			<input class="search-wrap-input w-input" autofocus="true" maxlength="256" name="query" placeholder="Enter search keyword" type="search" id="search-2" required="" />
-			<div class="search-bottom-line"></div>
-			<input type="submit" class="primary-button serch-button w-button" value="Search" />
-		</div>
-		<div data-w-id="cffaa0d6-0cd7-3509-9f08-dbbd1e309db4" class="search-close-button"></div>
-	</form>
+<!-- Начало Search Desktop -->
+@Html.Partial("SearchDesktop")
+<!-- Конец Search Desktop -->
 	<section class="banner-home-3">
 		<div class="w-layout-blockcontainer base-container w-container">
 			<div class="w-layout-hflex home-3-banner-wrapp">
@@ -878,75 +874,4 @@
 			</div>
 		</div>
 	</section>
-	<div class="footer">
-		<div class="base-container w-container">
-			<div class="footer-wrapper">
-				<div data-w-id="daf981fd-9b17-a0fb-7466-2c35634f2c76" class="footer-brand-wrapper">
-					<div class="footer-logo-wrapper">
-						<a href="/home-1" class="footer-brand w-nav-brand"><img src="~/images/union-20-6-.svg" loading="lazy" alt="Logo" height="21" class="footer-logo" /></a>
-						<p class="footer-brand-description">A premier video production studio.</p>
-					</div>
-				</div>
-				<div data-w-id="28a08b63-10c1-c078-f5ef-16f350f684f8" class="w-layout-hflex footer-links-right">
-					<div class="w-layout-hflex footer-links">
-						<div class="w-layout-vflex vertical-20 mobile-center">
-							<h5 class="upper-text text-white">Home</h5>
-							<div class="footer-links-wrapper">
-								<a href="/home-1" class="footer-link">Home 1.0</a><a href="/home-2" class="footer-link">Home 2.0</a><a href="/home-3" aria-current="page" class="footer-link w--current">Home 3.0</a>
-							</div>
-						</div>
-						<div class="w-layout-vflex vertical-20 mobile-center">
-							<h5 class="upper-text text-white">About</h5>
-							<div class="footer-links-wrapper"><a href="/about-us" class="footer-link">Studio</a><a href="/our-team" class="footer-link">Our Team</a><a href="/services" class="footer-link">Services</a></div>
-						</div>
-						<div class="w-layout-vflex vertical-20 mobile-center">
-							<h5 class="upper-text text-white">Our Works</h5>
-							<div class="footer-links-wrapper"><a href="/works-1" class="footer-link">Works 1.0</a><a href="/works-2" class="footer-link">Works 2.0</a><a href="/works-3" class="footer-link">Works 3.0</a></div>
-						</div>
-						<div class="w-layout-vflex vertical-20 mobile-center">
-							<h5 class="upper-text text-white">Resources</h5>
-							<div class="footer-links-wrapper"><a href="/blog-1" class="footer-link">Blog</a><a href="/faq" class="footer-link">FAQ</a></div>
-						</div>
-					</div>
-					<div class="footer-social-icons-wrapper">
-						<a href="https://www.instagram.com/" target="_blank" class="footer-soc-link w-inline-block"><img src="~/images/frame-20-2-.svg" loading="lazy" alt="social icon" /></a>
-						<a href="https://www.youtube.com/" target="_blank" class="footer-soc-link w-inline-block"><img src="~/images/frame-20-3-.svg" loading="lazy" alt="icon" /></a>
-						<a href="https://www.facebook.com/" target="_blank" class="footer-soc-link w-inline-block"><img src="~/images/frame-20-4-.svg" loading="lazy" alt="icon" /></a>
-					</div>
-				</div>
-			</div>
-			<div data-w-id="51c7c942-7113-60ab-7408-d175931e075b" class="w-layout-hflex footer-bottom">
-				<div class="footer-bottom-wrapper">
-					<div class="footer-copyright">© TheLab. All Rights Reserved. <a href="/templates/licensing" class="footer-licensing-link">Licensing</a></div>
-					<div class="footer-rights-wrapper">
-						<div class="footer-rights">
-							<a href="https://www.128.digital/webflow-templates" target="_blank" class="footer-copyright-link">Webflow Templates</a>by
-							<a href="https://www.128.digital/" target="_blank" class="footer-copyright-link">128.digital. </a>
-						</div>
-						<div class="footer-rights">Powered by <a href="https://webflow.com/" target="_blank" class="footer-copyright-link">Webflow</a></div>
-					</div>
-				</div>
-				<a href="#Hero-Top" class="to-top-link">back to top</a>
-			</div>
-		</div>
-		<div id="Hero-Top" class="hero-top"></div>
-		<div class="promotion-labels-wrapper-to-remove">
-			<div class="promotion-label-left">
-				<div class="promotion-label-holder">
-					<div class="promotion-label-paragraph">Boost Your Webflow with Pro Apps! Get 20% Off with Code <span class="promotion-coupon">WEBFLOW20</span></div>
-					<a href="https://webflow.com/@flowstar" target="_blank" class="promotion-label-button w-inline-block"><div>Try Now!</div></a>
-					<div data-w-id="e50b5e81-5fca-fc3c-ff00-a14f1c6f0557" class="promotion-label-close"><img loading="lazy" src="~/images/close-20pop-up.svg" alt="" class="close-image" /></div>
-				</div>
-			</div>
-			<div class="promotion-label-right">
-				<a href="https://webflow.com/templates/designers/128-digital" target="_blank" class="promotion-label-more-templates w-inline-block">
-					<img width="16" height="16" alt="128 logo" src="~/images/logo-20dark.svg" loading="lazy" class="promotion-icon" />
-					<div>More Templates</div>
-				</a>
-				<a href="https://webflow.com/dashboard/marketplace-checkout/redirect?rtype=Template&amp;rid=679aa222cf57f5c92ddf77d5" target="_blank" class="promotion-label-buy-this-template w-inline-block">
-					<img width="16" height="16" alt="" src="~/images/icon.svg" loading="lazy" class="promotion-icon" />
-					<div>Buy this Template</div>
-				</a>
-			</div>
-		</div>
-	</div>
+

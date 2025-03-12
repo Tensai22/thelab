@@ -1,11 +1,6 @@
-﻿	<form action="/search" class="search-desktop w-form">
-		<div class="search-wrapper">
-			<input class="search-wrap-input w-input" autofocus="true" maxlength="256" name="query" placeholder="Enter search keyword" type="search" id="search-2" required="" />
-			<div class="search-bottom-line"></div>
-			<input type="submit" class="primary-button serch-button w-button" value="Search" />
-		</div>
-		<div data-w-id="cffaa0d6-0cd7-3509-9f08-dbbd1e309db4" class="search-close-button"></div>
-	</form>
+﻿<!-- Начало Search Desktop -->
+@Html.Partial("SearchDesktop")
+<!-- Конец Search Desktop -->
 	<section class="banner-home-2 dark-background">
 		<div class="w-layout-blockcontainer base-container w-container">
 			<div class="w-layout-hflex home-2-banner-top">
@@ -148,39 +143,6 @@
 			</div>
 		</div>
 	</div>
-	<section class="section dark-bg-without-bottom">
-		<div class="w-layout-blockcontainer base-container w-container">
-			<div class="w-layout-hflex cta-wrapper">
-				<div class="w-layout-hflex subtitle dark">
-					<div>Contact us</div>
-					<div class="dot white"></div>
-				</div>
-				<div class="w-layout-vflex cta-right">
-					<div data-w-id="09466230-4a3c-b128-8268-bf2e95416850" class="cta-text-wrapper">
-						<h2 class="text-white">
-							<span class="text-span-image">.</span> Ready to bring your vision to life?
-							<span class="gray-color">Our team at The Lab is here to make it happen. Get in touch with us today to start your next video project!</span>
-						</h2>
-						<div data-poster-url="images/cta-poster-00001.jpg"
-							 data-video-urls="images/cta-transcode.mp4,images/cta-transcode.webm"
-							 data-autoplay="true"
-							 data-loop="true"
-							 data-wf-ignore="true"
-							 class="cta-video-absolute w-background-video w-background-video-atom">
-							<video id="09466230-4a3c-b128-8268-bf2e95416857-video" autoplay="" loop="" style='background-image:url("images/cta-poster-00001.jpg")' muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-								<source src="~/images/cta-transcode.mp4" data-wf-ignore="true" />
-								<source src="~/images/cta-transcode.webm" data-wf-ignore="true" />
-							</video>
-						</div>
-					</div>
-					<a data-w-id="09466230-4a3c-b128-8268-bf2e95416858" href="/contact-us" class="primary-button-white w-inline-block">
-						<div>Discover next project</div>
-						<div class="clip">
-							<div class="clip-icon-wrapper"><img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" /></div>
-							<div class="clip-icon-wrapper right"><img src="~/images/group-201.svg" loading="lazy" alt="icon" class="btn-icon" /></div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+<!-- Начало dark-bg-without-bottom -->
+@Html.Partial("DarkBgWithoutBottom")
+<!-- Конец dark-bg-without-bottom -->

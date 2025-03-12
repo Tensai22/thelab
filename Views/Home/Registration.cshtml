@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 350px;
+            padding: 20px;
+            background: #111;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            text-align: left;
+        }
+
+            .container input {
+                width: calc(100% - 20px);
+                padding: 10px;
+                margin: 10px 0;
+                border: none;
+                border-radius: 5px;
+                display: block;
+            }
+
+            .container button {
+                width: 100%;
+                padding: 10px;
+                background: #fff;
+                color: #000;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background 0.3s ease;
+                display: block;
+                margin-top: 10px;
+            }
+
+                .container button:hover {
+                    background: #ccc;
+                }
+
+        .toggle {
+            margin-top: 15px;
+            color: #bbb;
+            cursor: pointer;
+            text-align: right;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section id="auth" class="container">
+        <h2 id="form-title">Register</h2>
+        <form id="auth-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="toggle" id="toggle-form">Already have an account? <span>Sign In</span></p>
+    </section>
+    <script>
+        const formTitle = document.getElementById('form-title');
+        const authForm = document.getElementById('auth-form');
+        const toggleText = document.getElementById('toggle-form');
+        const usernameField = document.getElementById('username');
+        const emailField = document.getElementById('email');
+        const passwordField = document.getElementById('password');
+        const submitButton = authForm.querySelector('button');
+
+        toggleText.addEventListener('click', () => {
+            if (formTitle.textContent === 'Register') {
+                formTitle.textContent = 'Login';
+                usernameField.style.display = 'none';
+                emailField.placeholder = 'Email or Username';
+                submitButton.textContent = 'Sign In';
+                toggleText.innerHTML = "Don't have an account? <span>Sign Up</span>";
+            } else {
+                formTitle.textContent = 'Register';
+                usernameField.style.display = 'block';
+                emailField.placeholder = 'Email';
+                submitButton.textContent = 'Sign Up';
+                toggleText.innerHTML = "Already have an account? <span>Sign In</span>";
+            }
+        });
+    </script>
+</body>
+</html>
