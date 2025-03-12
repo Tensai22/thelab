@@ -1,7 +1,24 @@
+using Microsoft.AspNetCore.Cors.Infrastructure;
+using Serilog;
+using Serilog.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/thelab.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.Seq("http://localhost:5341/")
+    .MinimumLevel.Information()
+    .Enrich.FromLogContext()
+    .CreateLogger();
+
+
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 

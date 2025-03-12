@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using TheLab.Models;
 
+
 namespace TheLab.Controllers
 {
     public class HomeController : Controller
