@@ -62,12 +62,24 @@
                             </div>
                             <nav class="nav-dropdown-list w-dropdown-list">
                                 <div class="nav-dropdown-link-wrapper">
-                                    <a href="/about-us" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>About Us</a>
-                                    <a href="/services" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Services</a>
-                                    <a href="/our-team" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Our Team</a>
-                                    <a href="/pricing" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Pricing</a>
-                                    <a href="/testimonials" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Testimonilas</a>
-                                    <a href="/faq" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>FAQ</a>
+                                    <a href="@Url.Action("AboutUs", "home")" class="nav-dropdown-link w-dropdown-link">
+                                        <span class="nav-dropdown-link-line"> </span>About Us
+                                    </a>
+                                    <a href="/services" class="nav-dropdown-link w-dropdown-link">
+                                        <span class="nav-dropdown-link-line"> </span>Services
+                                    </a>
+                                    <a href="@Url.Action("OurTeam", "team")" class="nav-dropdown-link w-dropdown-link">
+                                        <span class="nav-dropdown-link-line"> </span>TEAM
+                                    </a>
+                                    <a href="/pricing" class="nav-dropdown-link w-dropdown-link">
+                                        <span class="nav-dropdown-link-line"> </span>Pricing
+                                    </a>
+                                    <a href="/testimonials" class="nav-dropdown-link w-dropdown-link">
+                                        <span class="nav-dropdown-link-line"> </span>Testimonials
+                                    </a>
+                                    <a href="@Url.Action("FAQ", "home")" class="nav-dropdown-link w-dropdown-link">
+                                        <span class="nav-dropdown-link-line"> </span>FAQ
+                                    </a>
                                 </div>
                             </nav>
                         </div>
