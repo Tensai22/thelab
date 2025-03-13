@@ -5,7 +5,6 @@
 }
 
 <style>
-    /* Общие стили для страницы */
     body {
         font-family: Arial, sans-serif;
         background-color: #000;
@@ -13,23 +12,20 @@
         margin: 0;
         display: flex;
         flex-direction: column;
-        min-height: 100vh; /* Устанавливаем высоту экрана */
+        min-height: 100vh;
     }
-
-    /* Контейнер для основного контента */
     .main-container {
-        flex-grow: 1; /* Занимает все доступное пространство */
+        flex-grow: 1;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    /* Стиль контейнера логина */
     .login-container {
         max-width: 350px;
         width: 100%;
         padding: 20px;
-        background: #111;
+        background: #fff; 
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
         text-align: center;
@@ -37,6 +33,7 @@
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
+        color: white; 
     }
 
         .login-container input {
@@ -46,15 +43,22 @@
             border: none;
             border-radius: 5px;
             text-align: center;
+            background: #000;
+            color: white; 
             box-sizing: border-box;
         }
+
+            .login-container input::placeholder {
+                color: white ; 
+            }
+
 
         .login-container button {
             width: 100%;
             margin-top: 15px;
             padding: 10px;
-            background: #fff;
-            color: #000;
+            background: #000;
+            color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -63,12 +67,12 @@
         }
 
             .login-container button:hover {
-                background: #ccc;
+                background: #333;
             }
 
     .toggle {
         margin-top: 15px;
-        color: #bbb;
+        color: white;
         cursor: pointer;
         display: block;
     }
@@ -77,6 +81,7 @@
         color: red;
         font-size: 12px;
     }
+
 </style>
 
 
