@@ -106,3 +106,28 @@
     </section>
 </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        const usernameInput = document.querySelector("input[name='Username']");
+        const passwordInput = document.querySelector("input[name='Password']");
+        const errorContainer = document.querySelector(".text-danger");
+
+        form.addEventListener("submit", function (event) {
+            let errors = [];
+
+            if (usernameInput.value.trim().length < 4) {
+                errors.push("Username must be at least 4 characters long.");
+            }
+
+            if (passwordInput.value.trim().length < 8) {
+                errors.push("Password must be at least 8 characters long.");
+            }
+
+            if (errors.length > 0) {
+                event.preventDefault(); 
+                errorContainer.innerHTML = errors.map(err => `<p>${err}</p>`).join("");
+            }
+        });
+    });
+</script>
