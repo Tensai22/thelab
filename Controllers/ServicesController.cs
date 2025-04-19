@@ -12,6 +12,9 @@ namespace TheLab.Controllers
         {
             return View();
         }
-
+        public IActionResult Pricing()
+        {
+            return View();
+        }
     }
 }

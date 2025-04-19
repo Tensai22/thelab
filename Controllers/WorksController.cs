@@ -14,6 +14,9 @@ namespace TheLab.Controllers
         {
             return View();
         }
-
+        public IActionResult Blog1()
+        {
+            return View();
+        }
     }
 }

@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization; // Добавить для работы с локализацией
 using System.Diagnostics;
+using System.Globalization; // Для работы с CultureInfo
 using TheLab.Models;
 
 namespace TheLab.Controllers
@@ -8,11 +11,15 @@ namespace TheLab.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IStringLocalizer<HomeController> _localizer; // Зависимость для локализации
 
-        public HomeController(ILogger<HomeController> logger)
+        // Конструктор для внедрения зависимостей
+        public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> localizer)
         {
             _logger = logger;
+            _localizer = localizer; // Инициализация локализатора
         }
+
         [Authorize]
         public IActionResult Index()
         {
@@ -28,36 +35,68 @@ namespace TheLab.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Contact(Models.Message userMessage)
+        {
+            _logger.LogInformation("User {name} trying to send form to email {email}", userMessage.Name, userMessage.Email);
+
+            EmailSender sender = new EmailSender();
+
+            _logger.LogInformation("Starting data validation");
+            if (string.IsNullOrWhiteSpace(userMessage.Name))
+            {
+                ModelState.AddModelError("name", "Name field is required to fill");
+            }
+            if (ModelState.IsValid)
+            {
+                _logger.LogInformation("Form sent successfully");
+                return RedirectToAction("Contact");
+            }
+            else
+            {
+                _logger.LogError("{name}, errors occured while sending form", userMessage.Name);
+                return View(userMessage);
+            }
+        }
+
         public IActionResult AboutUs()
         {
             return View();
         }
+
         public IActionResult FAQ()
         {
             return View();
         }
 
-        public IActionResult Home3()
-        {
-            return View();
-        }
-
-        public IActionResult Home2()
-        {
-            return View();
-        }
-
-
-        public IActionResult Home1()
-        {
-            return View();
-        }
-
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult ChangeLanguage(string culture)
+        {
+            var supportedCultures = new[] { "en", "ru", "kk" };
+
+            if (!supportedCultures.Contains(culture))
+            {
+                culture = "en"; // По умолчанию английский
+            }
+
+            Response.Cookies.Append(
+                "lang", // Должно совпадать с CookieName в CookieRequestCultureProvider
+                $"c={culture}|uic={culture}", // Формат, который ожидает CookieRequestCultureProvider
+                new CookieOptions
+                {
+                    Expires = DateTimeOffset.UtcNow.AddYears(1),
+                    IsEssential = true,
+                    Path = "/"
+                }
+            );
+
+            return RedirectToAction("Index"); // Или вернитесь на предыдущую страницу
         }
     }
 }

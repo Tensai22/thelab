@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter</value>
+	</resheader>
+
+	<data name="PerformanceTitle" xml:space="preserve"><value>Ultra Performance</value></data>
+	<data name="PerformanceDescription" xml:space="preserve">
+    <value>Load your site with a lightning-fast responsiveness. An optimized code lets Thelab load fast under any traffic conditions.</value>
+  </data>
+	<data name="GooglePageSpeed" xml:space="preserve"><value>Google PageSpeed</value></data>
+	<data name="PerformanceGrade" xml:space="preserve"><value>Performance Grade</value></data>
+	<data name="PageSpeedScore" xml:space="preserve"><value>PageSpeed Score</value></data>
+	<data name="GTmetrixYSlowScore" xml:space="preserve"><value>GTmetrix YSlow Score</value></data>
+</root>
