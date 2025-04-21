@@ -1,25 +1,27 @@
-﻿<section class="banner-home-2">
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<section class="banner-home-2">
 	<div class="w-layout-blockcontainer base-container w-container">
 		<div class="w-layout-hflex home-2-banner-top">
 			<div class="w-layout-vflex about-title">
 				<div class="w-layout-vflex vertical-20">
 					<div class="position-relative">
-						<h1>Creating Stories That Inspire</h1>
+						<h1>@Localizer["Creating Stories That Inspire"]</h1>
 					</div>
 					<div class="banner-2-description">
-						<div class="paragraph-large gray-color">At TheLab, we bring your vision to life through captivating storytelling and cinematic excellence.</div>
+						<div class="paragraph-large gray-color">@Localizer["At TheLab, we bring your vision to life through captivating storytelling and cinematic excellence."]</div>
 					</div>
 				</div>
 			</div>
 			<a href="#Scroll-link" class="scroll-link mobile-hidden w-inline-block">
-				<div>Scroll for more</div>
+				<div>@Localizer["Scroll for more"]</div>
 				<div class="dot"></div>
 			</a>
 		</div>
 		<a href="#" id="Scroll-link" class="lightbox-home-2 w-inline-block w-lightbox">
 			<div class="relative-20">
 				<div class="w-layout-hflex primary-button-white">
-					<div>Watch reel</div>
+					<div>@Localizer["Watch reel"]</div>
 					<div class="clip">
 						<div class="clip-icon-wrapper">
 							<img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" />
@@ -59,12 +61,12 @@
 	<div class="w-layout-blockcontainer base-container w-container">
 		<div class="w-layout-vflex vertical-100">
 			<div class="w-layout-hflex subtitle">
-				<div>About Studio</div>
+				<div>@Localizer["About Studio"]</div>
 				<div class="dot"></div>
 			</div>
 			<div class="w-layout-hflex about-home-wrapper">
 				<div class="about-title-wrapper">
-					<h2>A premier video <span class="text-span-image">.</span> production studio where creativity and innovation come together to craft visually stunning and impactful content.</h2>
+					<h2>@Localizer["A premier video"] <span class="text-span-image">.</span> production studio where creativity and innovation come together to craft visually stunning and impactful content.</h2>
 					<div class="about-small-video w-background-video w-background-video-atom">
 						<video autoplay loop muted playsinline style='background-image:url("~/images/small-poster-00001.jpg")' data-object-fit="cover">
 							<source src="~/images/small-transcode.mp4" type="video/mp4" />
@@ -73,7 +75,7 @@
 					</div>
 				</div>
 				<div class="w-layout-vflex vertical-40 max-w">
-					<p class="paragraph-large paragraph-no-margin">With a focus on both artistry and technical precision, we work closely with our clients to bring their unique stories to life.</p>
+					<p class="paragraph-large paragraph-no-margin">@Localizer["With a focus"]</p>
 				</div>
 			</div>
 			<div class="w-layout-grid numbers-grid">

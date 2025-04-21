@@ -76,6 +76,7 @@ namespace TheLab.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        [HttpPost]
         public IActionResult ChangeLanguage(string culture)
         {
             var supportedCultures = new[] { "en", "ru", "kk" };
@@ -96,7 +97,7 @@ namespace TheLab.Controllers
                 }
             );
 
-            return RedirectToAction("Index"); // Или вернитесь на предыдущую страницу
+            return Ok();
         }
     }
 }
