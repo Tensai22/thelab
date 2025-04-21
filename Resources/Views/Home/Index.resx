@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PerformanceTitle" xml:space="preserve">
-    <value>Ультра производительность</value>
+    <value />
   </data>
   <data name="PerformanceDescription" xml:space="preserve">
-    <value>Загрузите сайт с молниеносной скоростью. Оптимизированный код позволяет Thelab быстро загружаться при любом трафике.</value>
+    <value />
   </data>
   <data name="GooglePageSpeed" xml:space="preserve">
-    <value>Скорость Google страниц</value>
+    <value />
   </data>
   <data name="PerformanceGrade" xml:space="preserve">
-    <value>Оценка производительности</value>
+    <value />
   </data>
   <data name="PageSpeedScore" xml:space="preserve">
-    <value>Рейтинг скорости страницы</value>
+    <value />
   </data>
   <data name="GTmetrixYSlowScore" xml:space="preserve">
-    <value>Оценка GTmetrix YSlow</value>
+    <value />
   </data>
   <data name="KeyFeatures" xml:space="preserve">
-    <value>Ключевые особенности</value>
+    <value>Key Features</value>
   </data>
 </root>

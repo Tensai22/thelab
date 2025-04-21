@@ -76,27 +76,19 @@ namespace TheLab.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult ChangeLanguage(string culture)
+        
+
+        [HttpPost]
+        public JsonResult ChangeCulture(string culture)
         {
-            var supportedCultures = new[] { "en", "ru", "kk" };
-
-            if (!supportedCultures.Contains(culture))
-            {
-                culture = "en"; // По умолчанию английский
-            }
-
             Response.Cookies.Append(
-                "lang", // Должно совпадать с CookieName в CookieRequestCultureProvider
-                $"c={culture}|uic={culture}", // Формат, который ожидает CookieRequestCultureProvider
-                new CookieOptions
-                {
-                    Expires = DateTimeOffset.UtcNow.AddYears(1),
-                    IsEssential = true,
-                    Path = "/"
-                }
-            );
+                CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
 
-            return RedirectToAction("Index"); // Или вернитесь на предыдущую страницу
+                new CookieOptions { Expires = DateTime.Now.AddMonths(1) }
+                );
+
+            return Json(culture);
         }
     }
 }

@@ -8,11 +8,11 @@ using System.Globalization; // Добавьте этот using
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Добавляем поддержку локализации
-builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-builder.Services.AddRazorPages()
-    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-    .AddDataAnnotationsLocalization();
+//// Добавляем поддержку локализации
+//builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+//builder.Services.AddRazorPages()
+//    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+//    .AddDataAnnotationsLocalization();
 
 #region Login
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -37,23 +37,43 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 #endregion
 
-// Настройка локализации
-var supportedCultures = new[] { "en", "ru", "kk" };
-var localizationOptions = new RequestLocalizationOptions()
-    .SetDefaultCulture("en")
-    .AddSupportedCultures(supportedCultures)
-    .AddSupportedUICultures(supportedCultures);
+//// Настройка локализации
+//var supportedCultures = new[] { "en", "ru", "kk" };
+//var localizationOptions = new RequestLocalizationOptions()
+//    .SetDefaultCulture("en")
+//    .AddSupportedCultures(supportedCultures)
+//    .AddSupportedUICultures(supportedCultures);
 
-// Добавляем провайдер куки для хранения выбранного языка
-localizationOptions.RequestCultureProviders.Insert(0, new CookieRequestCultureProvider()
+//// Добавляем провайдер куки для хранения выбранного языка
+//localizationOptions.RequestCultureProviders.Insert(0, new CookieRequestCultureProvider()
+//{
+//    CookieName = "lang",
+//    Options = localizationOptions
+//});
+
+//builder.Services.AddSingleton(localizationOptions);
+
+builder.Services.AddControllersWithViews()
+    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+builder.Services.Configure<RequestLocalizationOptions>(options =>
 {
-    CookieName = "lang",
-    Options = localizationOptions
+    var supportedCultures = new[] {
+
+        new CultureInfo("en"),
+        new CultureInfo("ru"),
+        new CultureInfo("kk")
+    };
+    options.DefaultRequestCulture = new RequestCulture("kk");
+
+    options.SupportedUICultures = supportedCultures;
+
 });
 
-builder.Services.AddSingleton(localizationOptions);
-
 var app = builder.Build();
+
+
 
 if (!app.Environment.IsDevelopment())
 {
@@ -64,17 +84,13 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseRequestLocalization();
 // Локализация должна быть после UseRouting()
-app.UseRequestLocalization(localizationOptions);
 
 // Аутентификация и авторизация должны быть после UseRouting()
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapRazorPages();
-});
 
 app.MapControllerRoute(
     name: "default",

@@ -1,4 +1,11 @@
-﻿<div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar w-nav">
+﻿﻿@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
+@using System.Globalization
+
+@inject IOptions<RequestLocalizationOptions> locOptions
+
+<div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar w-nav">
     <div class="nav-container w-container">
         <div class="nav-menu-wrapper">
             <a href="@Url.Action("Index", "home")" class="brand w-nav-brand">
@@ -14,25 +21,6 @@
                     </div>
                 </div>
                 <div class="menu-wrap">
-                    <div data-delay="0" data-hover="true" data-w-id="language-dropdown" class="nav-dropdown w-dropdown">
-                        <div class="nav-dropdown-toggle w-dropdown-toggle">
-                            <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
-                            <p class="nav-item-title">@System.Threading.Thread.CurrentThread.CurrentUICulture.DisplayName</p>
-                        </div>
-                        <nav class="nav-dropdown-list w-dropdown-list">
-                            <div class="nav-dropdown-link-wrapper">
-                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"></span>English
-                                </a>
-                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="ru" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"></span>Русский
-                                </a>
-                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="kk" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"></span>Қазақша
-                                </a>
-                            </div>
-                        </nav>
-                    </div>
                     @if (User.Identity?.IsAuthenticated == true)
                     {
                         <p class="nav-item-title">@User.Identity.Name</p>
@@ -115,17 +103,22 @@
                         </div>
                         <nav class="nav-dropdown-list w-dropdown-list">
                             <div class="nav-dropdown-link-wrapper">
-                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"></span>English
-                                </a>
-                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="ru" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"></span>Русский
-                                </a>
-                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="kk" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"></span>Қазақша
-                                </a>
+                                @foreach (CultureInfo item in locOptions.Value.SupportedUICultures)
+                                {
+                                    var displayName = item.Name switch
+                                    {
+                                        "en" => "English",
+                                        "ru" => "Русский",
+                                        "kk" => "Қазақша",
+                                        _ => item.DisplayName
+                                    };
+                                    <span onclick="ChangeCulture('@item.Name')" class="nav-dropdown-link w-dropdown-link" style="cursor: pointer;">
+                                        <span class="nav-dropdown-link-line"></span>@displayName
+                                    </span>
+                                }
                             </div>
                         </nav>
+
                     </div>
                 </div>
             </nav>
