@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿
+
+<!DOCTYPE html>
 <html data-wf-page="677d4f3a6705411b1425c527" data-wf-site="677d4f3a6705411b1425c48e" lang="en" data-wf-locale="en">
 <head>
     <meta charset="utf-8" />
@@ -64,5 +66,19 @@
     <!-- End Footer -->
     <script src="~/js/jquery.js" type="text/javascript"></script>
     <script src="~/js/webflow-script.js" type="text/javascript"></script>
+    <script>
+        function ChangeCulture(culture) {
+            $.ajax({
+                url: '/Home/ChangeCulture',
+                data: { culture: culture },
+                dataType: 'json',
+                method: 'POST',
+                success: function () {
+                    location.reload();
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>
