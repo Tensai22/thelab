@@ -118,25 +118,130 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="A premier video" xml:space="preserve">
-    <value>A premier video . production studio where creativity and innovation come together to craft visually stunning and impactful content.</value>
+    <value>A premier video production studio where creativity and innovation come together to craft visually stunning and impactful content.</value>
+  </data>
+  <data name="A visionary in the" xml:space="preserve">
+    <value>A visionary in the world of video production with a deep passion for storytelling and creative excellence.</value>
   </data>
   <data name="About Studio" xml:space="preserve">
     <value>About Studio</value>
   </data>
+  <data name="At The Lab, we" xml:space="preserve">
+    <value>At The Lab, we believe that every frame tells a story. Our mission is to turn ideas into unforgettable experiences, where creativity and technology unite to inspire and engage.</value>
+  </data>
   <data name="At TheLab, we bring your vision to life through captivating storytelling and cinematic excellence." xml:space="preserve">
     <value>At TheLab, we bring your vision to life through captivating storytelling and cinematic excellence.</value>
+  </data>
+  <data name="Award-Winning Videos" xml:space="preserve">
+    <value>Award-Winning Videos</value>
+  </data>
+  <data name="Capturing every angle" xml:space="preserve">
+    <value>Capturing every angle, every moment, and every emotion.</value>
+  </data>
+  <data name="CEO of thelab" xml:space="preserve">
+    <value>CEO of thelab</value>
+  </data>
+  <data name="Collaboration" xml:space="preserve">
+    <value>Collaboration</value>
+  </data>
+  <data name="Concept and Scripting" xml:space="preserve">
+    <value>Concept and Scripting</value>
   </data>
   <data name="Creating Stories That Inspire" xml:space="preserve">
     <value>Creating Stories That Inspire</value>
   </data>
-  <data name="production studio where" xml:space="preserve">
-    <value>production studio where creativity and innovation come together to craft visually stunning and impactful content.</value>
+  <data name="Creativity" xml:space="preserve">
+    <value>Creativity</value>
+  </data>
+  <data name="Delivery and Review" xml:space="preserve">
+    <value>Delivery and Review</value>
+  </data>
+  <data name="Discovery and Planning" xml:space="preserve">
+    <value>Discovery and Planning</value>
+  </data>
+  <data name="Eric Labbonski" xml:space="preserve">
+    <value>Eric Labbonski</value>
+  </data>
+  <data name="From location scouting" xml:space="preserve">
+    <value>From location scouting and casting to scheduling and organizing, we handle all the logistics to ensure a smooth and efficient production phase.</value>
+  </data>
+  <data name="Happy Clients" xml:space="preserve">
+    <value>Happy Clients</value>
+  </data>
+  <data name="Hours of Footage" xml:space="preserve">
+    <value>Hours of Footage</value>
+  </data>
+  <data name="Integrity" xml:space="preserve">
+    <value>Integrity</value>
+  </data>
+  <data name="Our Process" xml:space="preserve">
+    <value>Our Process</value>
+  </data>
+  <data name="Our skilled crew" xml:space="preserve">
+    <value>Our skilled crew works tirelessly to capture every moment with precision, using the latest equipment and techniques to achieve the highest quality results.</value>
+  </data>
+  <data name="Our team of experts" xml:space="preserve">
+    <value>Our team of experts</value>
+  </data>
+  <data name="Our Values" xml:space="preserve">
+    <value>Our Values</value>
+  </data>
+  <data name="Our values are" xml:space="preserve">
+    <value>Our values are at the core of everything we do.</value>
+  </data>
+  <data name="Pre-Production" xml:space="preserve">
+    <value>Pre-Production</value>
+  </data>
+  <data name="Production" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="Projects Completed" xml:space="preserve">
+    <value>Projects Completed</value>
+  </data>
+  <data name="Quality" xml:space="preserve">
+    <value>Quality</value>
+  </data>
+  <data name="Recognized for outstanding" xml:space="preserve">
+    <value>Recognized for outstanding creativity and production quality.</value>
   </data>
   <data name="Scroll for more" xml:space="preserve">
     <value>Scroll for more</value>
   </data>
+  <data name="Successful video productions" xml:space="preserve">
+    <value>Successful video productions for clients across various industries.</value>
+  </data>
+  <data name="The Lab was" xml:space="preserve">
+    <value>The Lab was founded by Eric Labbonski.</value>
+  </data>
+  <data name="the team" xml:space="preserve">
+    <value>the team</value>
+  </data>
+  <data name="Trusted by top" xml:space="preserve">
+    <value>Trusted by top brands and businesses worldwide.</value>
+  </data>
   <data name="Watch Reel" xml:space="preserve">
     <value>Watch Reel</value>
+  </data>
+  <data name="We are committed" xml:space="preserve">
+    <value>We are committed to delivering the highest-quality videos that showcase the best of your brand.</value>
+  </data>
+  <data name="We are passionate" xml:space="preserve">
+    <value>We are passionate about bringing innovative ideas to life.</value>
+  </data>
+  <data name="We believe in" xml:space="preserve">
+    <value>We believe in the power of teamwork.</value>
+  </data>
+  <data name="We believe that" xml:space="preserve">
+    <value>We believe that every great video starts with a clear vision.</value>
+  </data>
+  <data name="We start by" xml:space="preserve">
+    <value>We start by getting to know your brand, your vision, and your target audience.</value>
+  </data>
+  <data name="We value transparency" xml:space="preserve">
+    <value>We value transparency and honesty in every aspect of our work.</value>
+  </data>
+  <data name="We work closely" xml:space="preserve">
+    <value>We work closely with you to make sure everything is just right, making any necessary revisions before final delivery.</value>
   </data>
   <data name="With a focus" xml:space="preserve">
     <value>With a focus on both artistry and technical precision, we work closely with our clients to bring their unique stories to life.</value>

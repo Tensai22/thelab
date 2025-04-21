@@ -118,25 +118,130 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="A premier video" xml:space="preserve">
-    <value>Превосходная студия видеопроизводства,</value>
+    <value>Превосходная студия видеопроизводства, где креативность и инновации объединяются для создания визуально ошеломляющего и впечатляющего контента.</value>
+  </data>
+  <data name="A visionary in the" xml:space="preserve">
+    <value>Провидец в мире видеопроизводства с глубокой страстью к повествованию и творческому совершенству.</value>
   </data>
   <data name="About Studio" xml:space="preserve">
     <value>Про студию</value>
   </data>
+  <data name="At The Lab, we" xml:space="preserve">
+    <value>В The Lab мы верим, что каждый кадр рассказывает историю. Наша миссия — превращать идеи в незабываемые впечатления, где креативность и технологии объединяются, чтобы вдохновлять и вовлекать.</value>
+  </data>
   <data name="At TheLab, we bring your vision to life through captivating storytelling and cinematic excellence." xml:space="preserve">
     <value>В TheLab мы воплощаем ваши идеи в жизнь с помощью захватывающего повествования и кинематографического совершенства.</value>
+  </data>
+  <data name="Award-Winning Videos" xml:space="preserve">
+    <value>Видеоролики, отмеченные наградами</value>
+  </data>
+  <data name="Capturing every angle" xml:space="preserve">
+    <value>Запечатлев каждый ракурс, каждый момент и каждую эмоцию.</value>
+  </data>
+  <data name="CEO of thelab" xml:space="preserve">
+    <value>Ген. директор thelab</value>
+  </data>
+  <data name="Collaboration" xml:space="preserve">
+    <value>Сотрудничество</value>
+  </data>
+  <data name="Concept and Scripting" xml:space="preserve">
+    <value>Концепция и сценарий</value>
   </data>
   <data name="Creating Stories That Inspire" xml:space="preserve">
     <value>Создание историй, которые вдохновляют</value>
   </data>
-  <data name="production studio where" xml:space="preserve">
-    <value>где креативность и инновации объединяются для создания визуально ошеломляющего и впечатляющего контента.</value>
+  <data name="Creativity" xml:space="preserve">
+    <value>Креативность</value>
+  </data>
+  <data name="Delivery and Review" xml:space="preserve">
+    <value>Доставка и проверка</value>
+  </data>
+  <data name="Discovery and Planning" xml:space="preserve">
+    <value>Открытие и планирование</value>
+  </data>
+  <data name="Eric Labbonski" xml:space="preserve">
+    <value>Эрик Лаббонски</value>
+  </data>
+  <data name="From location scouting" xml:space="preserve">
+    <value>От поиска локаций и подбора актеров до планирования и организации — мы занимаемся всей логистикой, чтобы обеспечить бесперебойный и эффективный этап производства.</value>
+  </data>
+  <data name="Happy Clients" xml:space="preserve">
+    <value>Счастливые клиенты</value>
+  </data>
+  <data name="Hours of Footage" xml:space="preserve">
+    <value>Часы отснятого материала</value>
+  </data>
+  <data name="Integrity" xml:space="preserve">
+    <value>Честность</value>
+  </data>
+  <data name="Our Process" xml:space="preserve">
+    <value>Наш процесс</value>
+  </data>
+  <data name="Our skilled crew" xml:space="preserve">
+    <value>Наша опытная команда неустанно трудится, чтобы с точностью запечатлеть каждый момент, используя новейшее оборудование и технологии для достижения результатов высочайшего качества.</value>
+  </data>
+  <data name="Our team of experts" xml:space="preserve">
+    <value>Наша команда экспертов сотрудничает с вами, чтобы разработать сильную концепцию и захватывающий сценарий.</value>
+  </data>
+  <data name="Our Values" xml:space="preserve">
+    <value>Наши ценности</value>
+  </data>
+  <data name="Our values are" xml:space="preserve">
+    <value>Наши ценности лежат в основе всего, что мы делаем.</value>
+  </data>
+  <data name="Pre-Production" xml:space="preserve">
+    <value>Предварительная подготовка</value>
+  </data>
+  <data name="Production" xml:space="preserve">
+    <value>Производство</value>
+  </data>
+  <data name="Projects Completed" xml:space="preserve">
+    <value>Завершенные проекты</value>
+  </data>
+  <data name="Quality" xml:space="preserve">
+    <value>Качество</value>
+  </data>
+  <data name="Recognized for outstanding" xml:space="preserve">
+    <value>Признан за выдающуюся креативность и качество продукции.</value>
   </data>
   <data name="Scroll for more" xml:space="preserve">
     <value>Нажмите для доп информации</value>
   </data>
+  <data name="Successful video productions" xml:space="preserve">
+    <value>Успешное видеопроизводство для клиентов из различных отраслей.</value>
+  </data>
+  <data name="The Lab was" xml:space="preserve">
+    <value>Лабораторию основал Эрик Лаббонски.</value>
+  </data>
+  <data name="the team" xml:space="preserve">
+    <value>команда</value>
+  </data>
+  <data name="Trusted by top" xml:space="preserve">
+    <value>Нам доверяют ведущие бренды и компании по всему миру.</value>
+  </data>
   <data name="Watch Reel" xml:space="preserve">
     <value>Смотреть рилл</value>
+  </data>
+  <data name="We are committed" xml:space="preserve">
+    <value>Мы стремимся предоставлять видеоролики высочайшего качества, которые наилучшим образом продемонстрируют ваш бренд.</value>
+  </data>
+  <data name="We are passionate" xml:space="preserve">
+    <value>Мы с энтузиазмом воплощаем в жизнь инновационные идеи.</value>
+  </data>
+  <data name="We believe in" xml:space="preserve">
+    <value>Мы верим в силу командной работы.</value>
+  </data>
+  <data name="We believe that" xml:space="preserve">
+    <value>Мы считаем, что каждое хорошее видео начинается с четкого видения.</value>
+  </data>
+  <data name="We start by" xml:space="preserve">
+    <value>Мы начинаем со знакомства с вашим брендом, вашим видением и вашей целевой аудиторией.</value>
+  </data>
+  <data name="We value transparency" xml:space="preserve">
+    <value>Мы ценим прозрачность и честность во всех аспектах нашей работы.</value>
+  </data>
+  <data name="We work closely" xml:space="preserve">
+    <value>Мы тесно сотрудничаем с вами, чтобы убедиться, что все сделано правильно, внося необходимые изменения перед окончательной доставкой.</value>
   </data>
   <data name="With a focus" xml:space="preserve">
     <value>Уделяя особое внимание как художественному мастерству, так и технической точности, мы тесно сотрудничаем с нашими клиентами, чтобы воплотить в жизнь их уникальные истории.</value>

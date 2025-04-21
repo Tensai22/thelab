@@ -118,25 +118,130 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="A premier video" xml:space="preserve">
-    <value>Басты бейне.</value>
+    <value>Басты бейне, Шығармашылық пен инновация көрнекі түрде керемет және әсерлі мазмұнды жасау үшін біріктірілген өндірістік студия.</value>
+  </data>
+  <data name="A visionary in the" xml:space="preserve">
+    <value>Сюжетті баяндау мен шығармашылық шеберлікке терең құмарлығы бар бейне өндірісі әлеміндегі көреген.</value>
   </data>
   <data name="About Studio" xml:space="preserve">
     <value>Студия туралы</value>
   </data>
+  <data name="At The Lab, we" xml:space="preserve">
+    <value>The Lab та біз әрбір кадр оқиғаны баяндайды деп сенеміз. Біздің міндетіміз – идеяларды ұмытылмас тәжірибеге айналдыру, онда шығармашылық пен технология шабыт пен тарту үшін біріктіріледі.</value>
+  </data>
   <data name="At TheLab, we bring your vision to life through captivating storytelling and cinematic excellence." xml:space="preserve">
     <value>TheLab-те біз сіздің көзқарасыңызды қызықты әңгімелер мен кинематографиялық шеберлік арқылы жүзеге асырамыз.</value>
+  </data>
+  <data name="Award-Winning Videos" xml:space="preserve">
+    <value>Марапатқа ие бейнелер</value>
+  </data>
+  <data name="Capturing every angle" xml:space="preserve">
+    <value>Әрбір бұрышты, әрбір сәтті және әрбір эмоцияны түсіру.</value>
+  </data>
+  <data name="CEO of thelab" xml:space="preserve">
+    <value>thelab компаниясының бас директоры</value>
+  </data>
+  <data name="Collaboration" xml:space="preserve">
+    <value>Ынтымақтастық</value>
+  </data>
+  <data name="Concept and Scripting" xml:space="preserve">
+    <value>Тұжырымдама және сценарий</value>
   </data>
   <data name="Creating Stories That Inspire" xml:space="preserve">
     <value>Шабыт беретін әңгімелер жасау</value>
   </data>
-  <data name="production studio where" xml:space="preserve">
-    <value>Шығармашылық пен инновация көрнекі түрде керемет және әсерлі мазмұнды жасау үшін біріктірілген өндірістік студия.</value>
+  <data name="Creativity" xml:space="preserve">
+    <value>Шығармашылық</value>
+  </data>
+  <data name="Delivery and Review" xml:space="preserve">
+    <value>Жеткізу және шолу</value>
+  </data>
+  <data name="Discovery and Planning" xml:space="preserve">
+    <value>Ашылулар және жоспарлау</value>
+  </data>
+  <data name="Eric Labbonski" xml:space="preserve">
+    <value>Эрик Лаббонски</value>
+  </data>
+  <data name="From location scouting" xml:space="preserve">
+    <value>Орналасқан жерді анықтау мен кастингтен бастап жоспарлау мен ұйымдастыруға дейін біз өндірістің біркелкі және тиімді кезеңін қамтамасыз ету үшін барлық логистиканы орындаймыз.</value>
+  </data>
+  <data name="Happy Clients" xml:space="preserve">
+    <value>Бақытты клиенттер</value>
+  </data>
+  <data name="Hours of Footage" xml:space="preserve">
+    <value>Түсірілім сағаттары</value>
+  </data>
+  <data name="Integrity" xml:space="preserve">
+    <value>Тұтастық</value>
+  </data>
+  <data name="Our Process" xml:space="preserve">
+    <value>Біздің процесс</value>
+  </data>
+  <data name="Our skilled crew" xml:space="preserve">
+    <value>Біздің білікті экипаж ең жоғары сапалы нәтижелерге қол жеткізу үшін ең жаңа жабдықтар мен әдістерді пайдалана отырып, әрбір сәтті дәлдікпен түсіру үшін тынымсыз жұмыс істейді.</value>
+  </data>
+  <data name="Our team of experts" xml:space="preserve">
+    <value>Біздің сарапшылар тобы күшті тұжырымдама мен тартымды сценарийді әзірлеу үшін сізбен бірге жұмыс істейді.</value>
+  </data>
+  <data name="Our Values" xml:space="preserve">
+    <value>Біздің құндылықтарымыз</value>
+  </data>
+  <data name="Our values are" xml:space="preserve">
+    <value>Біздің құндылықтарымыз біз жасайтын барлық нәрсенің негізі болып табылады.</value>
+  </data>
+  <data name="Pre-Production" xml:space="preserve">
+    <value>Алдын ала өндіру</value>
+  </data>
+  <data name="Production" xml:space="preserve">
+    <value>Өндіріс</value>
+  </data>
+  <data name="Projects Completed" xml:space="preserve">
+    <value>Аяқталған жобалар</value>
+  </data>
+  <data name="Quality" xml:space="preserve">
+    <value>Сапалық</value>
+  </data>
+  <data name="Recognized for outstanding" xml:space="preserve">
+    <value>Көрнекті шығармашылық және өндіріс сапасы үшін танылды.</value>
   </data>
   <data name="Scroll for more" xml:space="preserve">
     <value>Қосымша ақпарат үшін басыныз</value>
   </data>
+  <data name="Successful video productions" xml:space="preserve">
+    <value>Әр түрлі салалардағы клиенттерге арналған сәтті бейне өндірісі.</value>
+  </data>
+  <data name="The Lab was" xml:space="preserve">
+    <value>Зертхананың негізін Эрик Лаббонски салған.</value>
+  </data>
+  <data name="the team" xml:space="preserve">
+    <value>топ</value>
+  </data>
+  <data name="Trusted by top" xml:space="preserve">
+    <value>Дүние жүзіндегі үздік брендтер мен компаниялар сенім артқан.</value>
+  </data>
   <data name="Watch Reel" xml:space="preserve">
     <value>Рилл көру</value>
+  </data>
+  <data name="We are committed" xml:space="preserve">
+    <value>Біз сіздің брендіңіздің ең жақсысын көрсететін жоғары сапалы бейнелерді жеткізуге дайынбыз.</value>
+  </data>
+  <data name="We are passionate" xml:space="preserve">
+    <value>Біз инновациялық идеяларды өмірге енгізуге құмармыз.</value>
+  </data>
+  <data name="We believe in" xml:space="preserve">
+    <value>Біз командалық жұмыстың күшіне сенеміз.</value>
+  </data>
+  <data name="We believe that" xml:space="preserve">
+    <value>Кез келген керемет бейне анық көзқарастан басталатынына сенімдіміз.</value>
+  </data>
+  <data name="We start by" xml:space="preserve">
+    <value>Біз сіздің брендіңізді, көзқарасыңызды және мақсатты аудиторияңызды білуден бастаймыз.</value>
+  </data>
+  <data name="We value transparency" xml:space="preserve">
+    <value>Біз жұмысымыздың әрбір аспектісінде ашықтық пен адалдықты бағалаймыз.</value>
+  </data>
+  <data name="We work closely" xml:space="preserve">
+    <value>Біз соңғы жеткізілім алдында кез келген қажетті түзетулерді жасай отырып, бәрі дұрыс екеніне көз жеткізу үшін сізбен тығыз жұмыс жасаймыз.</value>
   </data>
   <data name="With a focus" xml:space="preserve">
     <value>Көркемдік пен техникалық дәлдікке баса назар аудара отырып, біз өз клиенттерімізбен олардың бірегей оқиғаларын өмірге келтіру үшін тығыз жұмыс жасаймыз.</value>
