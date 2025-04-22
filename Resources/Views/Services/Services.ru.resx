@@ -126,4 +126,43 @@
   <data name="c" xml:space="preserve">
     <value>Прокрутите для получения доп. информации</value>
   </data>
+  <data name="d" xml:space="preserve">
+    <value>Кинематографическое повествование</value>
+  </data>
+  <data name="e" xml:space="preserve">
+    <value>Превращаем идеи в визуально ошеломляющие повествования.</value>
+  </data>
+  <data name="f" xml:space="preserve">
+    <value>Творческое редактирование</value>
+  </data>
+  <data name="g" xml:space="preserve">
+    <value>Продуманные видеоролики, которые увлекают и вовлекают вашу аудиторию.</value>
+  </data>
+  <data name="h" xml:space="preserve">
+    <value>Визуальные эффекты</value>
+  </data>
+  <data name="i" xml:space="preserve">
+    <value>Добавляем волшебство с помощью бесшовного и захватывающего цифрового искусства.</value>
+  </data>
+  <data name="j" xml:space="preserve">
+    <value>Звуковой дизайн</value>
+  </data>
+  <data name="k" xml:space="preserve">
+    <value>Улучшайте истории с помощью профессионального звука и идеальных звуковых ландшафтов.</value>
+  </data>
+  <data name="l" xml:space="preserve">
+    <value>Брендовые фильмы</value>
+  </data>
+  <data name="m" xml:space="preserve">
+    <value>Демонстрация вашего бренда с помощью впечатляющего высококачественного видеоконтента.</value>
+  </data>
+  <data name="n" xml:space="preserve">
+    <value>Кинематография с использованием дронов</value>
+  </data>
+  <data name="o" xml:space="preserve">
+    <value>Съемка захватывающих кадров с воздуха для создания динамичного визуального эффекта.</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Посмотреть подробности</value>
+  </data>
 </root>

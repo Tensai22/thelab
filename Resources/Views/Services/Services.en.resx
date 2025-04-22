@@ -126,4 +126,43 @@
   <data name="c" xml:space="preserve">
     <value>Scroll for more</value>
   </data>
+  <data name="d" xml:space="preserve">
+    <value>Cinematic Storytelling</value>
+  </data>
+  <data name="e" xml:space="preserve">
+    <value>Transforming ideas into visually stunning narratives.</value>
+  </data>
+  <data name="f" xml:space="preserve">
+    <value>Creative Editing</value>
+  </data>
+  <data name="g" xml:space="preserve">
+    <value>Polished videos that captivate and engage your audience.</value>
+  </data>
+  <data name="h" xml:space="preserve">
+    <value>Visual Effects</value>
+  </data>
+  <data name="i" xml:space="preserve">
+    <value>Adding magic with seamless and immersive digital artistry.</value>
+  </data>
+  <data name="j" xml:space="preserve">
+    <value>Sound Design</value>
+  </data>
+  <data name="k" xml:space="preserve">
+    <value>Enhancing stories with professional audio and perfect soundscapes.</value>
+  </data>
+  <data name="l" xml:space="preserve">
+    <value>Brand Films</value>
+  </data>
+  <data name="m" xml:space="preserve">
+    <value>Showcasing your brand with impactful, high-quality video content.</value>
+  </data>
+  <data name="n" xml:space="preserve">
+    <value>Drone Cinematography</value>
+  </data>
+  <data name="o" xml:space="preserve">
+    <value>Capturing breathtaking aerial footage for dynamic visual impact.</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View Details</value>
+  </data>
 </root>

@@ -126,4 +126,43 @@
   <data name="c" xml:space="preserve">
     <value>Қосымша ақпарат алу үшін айналдырыңыз</value>
   </data>
+  <data name="d" xml:space="preserve">
+    <value>Кинематографиялық әңгіме</value>
+  </data>
+  <data name="e" xml:space="preserve">
+    <value>Идеяларды көрнекі түрде таң қалдыратын әңгімелерге айналдыру.</value>
+  </data>
+  <data name="f" xml:space="preserve">
+    <value>Шығармашылық өңдеу</value>
+  </data>
+  <data name="g" xml:space="preserve">
+    <value>Аудиторияңызды баурап алатын және қызықтыратын жылтыр бейнелер.</value>
+  </data>
+  <data name="h" xml:space="preserve">
+    <value>Көрнекі әсерлер</value>
+  </data>
+  <data name="i" xml:space="preserve">
+    <value>Үздіксіз және иммерсивті цифрлық шеберлікпен сиқыр қосу.</value>
+  </data>
+  <data name="j" xml:space="preserve">
+    <value>Дыбыс дизайны</value>
+  </data>
+  <data name="k" xml:space="preserve">
+    <value>Кәсіби аудио және тамаша дыбыс пейзаждары арқылы әңгімелерді жақсарту.</value>
+  </data>
+  <data name="l" xml:space="preserve">
+    <value>Бренд фильмдері</value>
+  </data>
+  <data name="m" xml:space="preserve">
+    <value>Брендіңізді әсерлі, жоғары сапалы бейне мазмұнымен көрсету.</value>
+  </data>
+  <data name="n" xml:space="preserve">
+    <value>Дрон кинематографиясы</value>
+  </data>
+  <data name="o" xml:space="preserve">
+    <value>Динамикалық визуалды әсер ету үшін әуеден тыныс алуды түсіру.</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Мәліметтерді көру</value>
+  </data>
 </root>
