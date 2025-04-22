@@ -123,8 +123,14 @@
   <data name="Buy" xml:space="preserve">
     <value>Buy now</value>
   </data>
+  <data name="Cinematic" xml:space="preserve">
+    <value>Cinematic</value>
+  </data>
   <data name="Commitment" xml:space="preserve">
     <value>Commitment to delivering your unique vision</value>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>Delivery within 7 days</value>
   </data>
   <data name="Essential" xml:space="preserve">
     <value>Essential</value>
@@ -132,8 +138,14 @@
   <data name="Expert" xml:space="preserve">
     <value>Our team of experts collaborates with you to develop a strong concept and compelling script.</value>
   </data>
+  <data name="For" xml:space="preserve">
+    <value>For those seeking top-tier, cinematic-quality visuals</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>From location scouting and casting to scheduling and organizing, we handle all the logistics to ensure a smooth and efficient production phase.</value>
+  </data>
+  <data name="Ideal" xml:space="preserve">
+    <value>Ideal for businesses and brands that need a professional production.</value>
   </data>
   <data name="Our" xml:space="preserve">
     <value>Our Packages</value>
@@ -144,11 +156,20 @@
   <data name="Perfect" xml:space="preserve">
     <value>Perfect for small projects and startups looking to make an impact</value>
   </data>
+  <data name="Professional" xml:space="preserve">
+    <value>Professional</value>
+  </data>
   <data name="quality" xml:space="preserve">
     <value>Our packages are designed to meet your goals without compromising on quality</value>
   </data>
+  <data name="Script" xml:space="preserve">
+    <value>Script consultation</value>
+  </data>
   <data name="Scroll" xml:space="preserve">
     <value>Scroll for more</value>
+  </data>
+  <data name="Single" xml:space="preserve">
+    <value>Single filming location</value>
   </data>
   <data name="Starting" xml:space="preserve">
     <value>Starting at</value>
@@ -158,6 +179,18 @@
   </data>
   <data name="Transparent" xml:space="preserve">
     <value>Transparent communication throughout the process</value>
+  </data>
+  <data name="UP" xml:space="preserve">
+    <value>Up to 2 minutes of edited video</value>
+  </data>
+  <data name="UP1" xml:space="preserve">
+    <value>Up to 5 minutes of edited video&lt;</value>
+  </data>
+  <data name="UP2" xml:space="preserve">
+    <value>Up to 10 minutes of edited video&lt;</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Use of state-of-the-art equipment</value>
   </data>
   <data name="WeAre" xml:space="preserve">
     <value>We are more than just a video production studio</value>

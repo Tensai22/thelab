@@ -123,8 +123,14 @@
   <data name="Buy" xml:space="preserve">
     <value>Купить сейчас</value>
   </data>
+  <data name="Cinematic" xml:space="preserve">
+    <value>Кинематографический</value>
+  </data>
   <data name="Commitment" xml:space="preserve">
     <value>Стремление воплотить в жизнь ваше уникальное видение</value>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>Доставка в течение 7 дней</value>
   </data>
   <data name="Essential" xml:space="preserve">
     <value>Существенный</value>
@@ -132,8 +138,14 @@
   <data name="Expert" xml:space="preserve">
     <value>Наша команда экспертов сотрудничает с вами, чтобы разработать сильную концепцию и захватывающий сценарий.</value>
   </data>
+  <data name="For" xml:space="preserve">
+    <value>Для тех, кто ищет первоклассные визуальные эффекты кинематографического качества</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>От поиска локаций и подбора актеров до планирования и организации — мы занимаемся всей логистикой, чтобы обеспечить бесперебойный и эффективный этап производства.</value>
+  </data>
+  <data name="Ideal" xml:space="preserve">
+    <value>Идеально подходит для предприятий и брендов, которым требуется профессиональное производство.</value>
   </data>
   <data name="Our" xml:space="preserve">
     <value>Наши пакеты</value>
@@ -144,11 +156,20 @@
   <data name="Perfect" xml:space="preserve">
     <value>Идеально подходит для небольших проектов и стартапов, стремящихся произвести впечатление</value>
   </data>
+  <data name="Professional" xml:space="preserve">
+    <value>Профессиональный</value>
+  </data>
   <data name="quality" xml:space="preserve">
     <value>Наши пакеты разработаны для достижения ваших целей без ущерба качеству.</value>
   </data>
+  <data name="Script" xml:space="preserve">
+    <value>Консультация по сценарию</value>
+  </data>
   <data name="Scroll" xml:space="preserve">
     <value>Прокрутите для получения дополнительной информации</value>
+  </data>
+  <data name="Single" xml:space="preserve">
+    <value>Одно место съемок&lt;</value>
   </data>
   <data name="Starting" xml:space="preserve">
     <value>Начиная с</value>
@@ -158,6 +179,18 @@
   </data>
   <data name="Transparent" xml:space="preserve">
     <value>Прозрачная коммуникация на протяжении всего процесса</value>
+  </data>
+  <data name="UP" xml:space="preserve">
+    <value>До 2 минут смонтированного видео</value>
+  </data>
+  <data name="UP1" xml:space="preserve">
+    <value>До 5 минут смонтированного видео</value>
+  </data>
+  <data name="UP2" xml:space="preserve">
+    <value>До 10 минут смонтированного видео</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Использование самого современного оборудования</value>
   </data>
   <data name="WeAre" xml:space="preserve">
     <value>Мы больше, чем просто студия видеопроизводства</value>

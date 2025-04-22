@@ -123,8 +123,14 @@
   <data name="Buy" xml:space="preserve">
     <value>Қазір сатып ал</value>
   </data>
+  <data name="Cinematic" xml:space="preserve">
+    <value>Кинематикалық</value>
+  </data>
   <data name="Commitment" xml:space="preserve">
     <value>Сіздің бірегей көзқарасыңызды жеткізу міндеттемесі</value>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>7 күн ішінде жеткізу</value>
   </data>
   <data name="Essential" xml:space="preserve">
     <value>Маңызды</value>
@@ -132,8 +138,14 @@
   <data name="Expert" xml:space="preserve">
     <value>Біздің сарапшылар тобы күшті тұжырымдама мен тартымды сценарийді әзірлеу үшін сізбен бірге жұмыс істейді.</value>
   </data>
+  <data name="For" xml:space="preserve">
+    <value>Жоғары деңгейлі, кинематографиялық сапалы көрнекілерді іздейтіндер үшін</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>Орналасқан жерді анықтау мен кастингтен бастап жоспарлау мен ұйымдастыруға дейін біз өндірістің біркелкі және тиімді кезеңін қамтамасыз ету үшін барлық логистиканы орындаймыз.</value>
+  </data>
+  <data name="Ideal" xml:space="preserve">
+    <value>Кәсіби өндірісті қажет ететін кәсіпорындар мен брендтер үшін өте қолайлы.</value>
   </data>
   <data name="Our" xml:space="preserve">
     <value>Біздің пакеттер</value>
@@ -144,11 +156,20 @@
   <data name="Perfect" xml:space="preserve">
     <value>Әсер етуді қалайтын шағын жобалар мен стартаптар үшін өте қолайлы</value>
   </data>
+  <data name="Professional" xml:space="preserve">
+    <value>Профессионалды</value>
+  </data>
   <data name="quality" xml:space="preserve">
     <value>Біздің пакеттер сапаға нұқсан келтірместен сіздің мақсаттарыңызға жетуге арналған</value>
   </data>
+  <data name="Script" xml:space="preserve">
+    <value>Сценарий кеңесі</value>
+  </data>
   <data name="Scroll" xml:space="preserve">
     <value>Қосымша ақпарат алу үшін айналдырыңыз</value>
+  </data>
+  <data name="Single" xml:space="preserve">
+    <value>Бір түсірілім орн</value>
   </data>
   <data name="Starting" xml:space="preserve">
     <value>Басталуы</value>
@@ -158,6 +179,18 @@
   </data>
   <data name="Transparent" xml:space="preserve">
     <value>Процесс барысында ашық байланыс</value>
+  </data>
+  <data name="UP" xml:space="preserve">
+    <value>2 минутқа дейін өңделген бейне</value>
+  </data>
+  <data name="UP1" xml:space="preserve">
+    <value>5 минутқа дейін өңделген бейне</value>
+  </data>
+  <data name="UP2" xml:space="preserve">
+    <value>10 минутқа дейін өңделген бейне</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Соңғы үлгідегі жабдықтарды пайдалану</value>
   </data>
   <data name="WeAre" xml:space="preserve">
     <value>Біз жай ғана бейне шығару студиясы емеспіз</value>
