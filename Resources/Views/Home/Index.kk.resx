@@ -1,24 +1,234 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter</value>
-	</resheader>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-	<data name="PerformanceTitle" xml:space="preserve"><value>Ультра өнімділік</value></data>
-	<data name="PerformanceDescription" xml:space="preserve">
-    <value>Сайтыңыз найзағай жылдамдықпен жүктелсін. Оптимизацияланған код кез келген трафик жағдайында жылдам жұмыс істеуге мүмкіндік береді.</value>
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="a" xml:space="preserve">
+    <value>Бейне өндірісінің веб-ағыны үлгісі</value>
   </data>
-	<data name="GooglePageSpeed" xml:space="preserve"><value>Google PageSpeed жылдамдығы</value></data>
-	<data name="PerformanceGrade" xml:space="preserve"><value>Өнімділік бағасы</value></data>
-	<data name="PageSpeedScore" xml:space="preserve"><value>Бет жылдамдығы рейтингі</value></data>
-	<data name="GTmetrixYSlowScore" xml:space="preserve"><value>GTmetrix YSlow бағасы</value></data>
+  <data name="b" xml:space="preserve">
+    <value>3 қону беттері. 16 Ішкі беттер.</value>
+  </data>
+  <data name="c" xml:space="preserve">
+    <value>Ультра производительность</value>
+  </data>
+  <data name="d" xml:space="preserve">
+    <value>Сайтыңызды найзағай жылдамдығымен жүктеңіз. Оңтайландырылған код Thelab-қа кез келген қозғалыс жағдайында жылдам жүктеуге мүмкіндік береді.</value>
+  </data>
+  <data name="e" xml:space="preserve">
+    <value>Өнімділік деңгейі</value>
+  </data>
+  <data name="f" xml:space="preserve">
+    <value>Ұпай</value>
+  </data>
+  <data name="g" xml:space="preserve">
+    <value>Негізгі мүмкіндіктер</value>
+  </data>
+  <data name="h" xml:space="preserve">
+    <value>Достық қолдау</value>
+  </data>
+  <data name="i" xml:space="preserve">
+    <value>Қате табылды немесе қандай да бір мәселе туындаса, бізге электрондық хат жіберіңіз</value>
+  </data>
+  <data name="j" xml:space="preserve">
+    <value>Іздеу жүйесі оңтайландырылған</value>
+  </data>
+  <data name="k" xml:space="preserve">
+    <value>SERP-те рейтинг алыңыз. Үлгі іздеу жүйелерінің талаптарына оңтайландырылған.</value>
+  </data>
+  <data name="l" xml:space="preserve">
+    <value>Теңшелетін типография</value>
+  </data>
+  <data name="m" xml:space="preserve">
+    <value>Үлгі типографияны реттеуге және қажеттіліктеріңізге сәйкес реттелетін түстерді таңдауға мүмкіндік береді.</value>
+  </data>
+  <data name="n" xml:space="preserve">
+    <value>Маңызды ішкі беттер</value>
+  </data>
+  <data name="o" xml:space="preserve">
+    <value>Қажетті беттерді жасауда шексіз әлеует. Біз маңызды бет макеттерін жасадық, соның ішінде: Туралы, Баға, Байланыс және т.б.</value>
+  </data>
+  <data name="p" xml:space="preserve">
+    <value>Қазіргі заманғы технологиялар</value>
+  </data>
+  <data name="q" xml:space="preserve">
+    <value>Үлгі жақсы жобаланған және түрлендіруге жоғары бағытталған. Көрнекі кенепте HTML, CSS және Javascript көмегімен құрастырылған.</value>
+  </data>
+  <data name="r" xml:space="preserve">
+    <value>Жоғары жылдамдықты өнімділік</value>
+  </data>
+  <data name="s" xml:space="preserve">
+    <value>Сайтыңызды найзағай жылдамдығымен жүктеңіз. Оңтайландырылған код үлгіні кез келген қозғалыс жағдайында жылдам жүктеуге мүмкіндік береді.</value>
+  </data>
+  <data name="t" xml:space="preserve">
+    <value>Өмірлік жаңартулар</value>
+  </data>
+  <data name="u" xml:space="preserve">
+    <value>Қолмен жасамай-ақ, үлгінің соңғы нұсқасын жаңартып отырыңыз.</value>
+  </data>
+  <data name="v" xml:space="preserve">
+    <value>Жоғары теңшелетін</value>
+  </data>
+  <data name="w" xml:space="preserve">
+    <value>Кірістірілген құралдарымыз бен параметрлерімізбен теңшеу арқылы веб-сайтыңызды өзіңіз қалағандай етіп жасаңыз - кодтау дағдыларын қажет етпестен!</value>
+  </data>
+  <data name="x" xml:space="preserve">
+    <value>Ішкі беттер</value>
+  </data>
+  <data name="y" xml:space="preserve">
+    <value>Қажетті беттерді жасаудың шексіз мүмкіндігі. Біз негізгі бет макеттерін жасадық, соның ішінде: Біз туралы, Қызметтер, Жұмыстар және т.б.</value>
+  </data>
+  <data name="z" xml:space="preserve">
+    <value>Біз туралы</value>
+  </data>
+  <data name="za" xml:space="preserve">
+    <value>Біздің команда</value>
+  </data>
+  <data name="zb" xml:space="preserve">
+    <value>Біздің қызметтер</value>
+  </data>
+  <data name="zc" xml:space="preserve">
+    <value>Қызмет мәліметтері</value>
+  </data>
+  <data name="zd" xml:space="preserve">
+    <value>Біздің жұмыстар</value>
+  </data>
+  <data name="ze" xml:space="preserve">
+    <value>Жұмыс мәліметтері</value>
+  </data>
+  <data name="zf" xml:space="preserve">
+    <value>Айғақтар</value>
+  </data>
+  <data name="zg" xml:space="preserve">
+    <value>Баға</value>
+  </data>
+  <data name="zh" xml:space="preserve">
+    <value>Бізбен хабарласыңыз</value>
+  </data>
+  <data name="zi" xml:space="preserve">
+    <value>Блог мәліметтері</value>
+  </data>
+  <data name="zj" xml:space="preserve">
+    <value>Сыртқы және ішкі сұлулық балансы</value>
+  </data>
+  <data name="zk" xml:space="preserve">
+    <value>Келесі тамаша веб-сайтыңызды құруды қазірден бастаңыз.</value>
+  </data>
+  <data name="zl" xml:space="preserve">
+    <value>Сатып алу</value>
+  </data>
 </root>
