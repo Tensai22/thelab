@@ -1,0 +1,138 @@
+﻿<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register-container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            background: #000;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .register-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            background: #222;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .register-container input::placeholder {
+            color: white;
+        }
+
+        .register-container button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .register-container button:hover {
+            background: #ccc;
+        }
+
+        .toggle {
+            margin-top: 15px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .text-danger {
+            color: red;
+            font-size: 12px;
+        }
+
+        .register-container h2 {
+            color: white;
+        }
+
+        .register-container a {
+            color: white;
+        }
+
+    </style>
+
+<div class="main-container">
+    <section class="register-container">
+        <h2>Sign Up</h2>
+
+        <form id="registerForm">
+            <input name="username" placeholder="Username" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input name="password" type="password" placeholder="Password" required />
+            <input name="confirmPassword" type="password" placeholder="Confirm Password" required />
+
+            <button type="submit">Register</button>
+            <div id="custom-error-container" class="text-danger"></div>
+        </form>
+
+        <p class="toggle">Already have an account? <a href="#"> Login</a></p>
+    </section>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("registerForm");
+        const usernameInput = form.elements["username"];
+        const emailInput = form.elements["email"];
+        const passwordInput = form.elements["password"];
+        const confirmPasswordInput = form.elements["confirmPassword"];
+        const errorContainer = document.getElementById("custom-error-container");
+
+        form.addEventListener("submit", function (event) {
+            let errors = [];
+
+            if (usernameInput.value.trim().length < 4) {
+                errors.push("Username must be at least 4 characters long.");
+            }
+
+            if (passwordInput.value.length < 8) {
+                errors.push("Password must be at least 8 characters.");
+            }
+
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                errors.push("Passwords do not match.");
+            }
+
+            if (errors.length > 0) {
+                event.preventDefault();
+                errorContainer.innerHTML = errors.map(e => `<p>${e}</p>`).join("");
+            } else {
+                alert("Registration successful!");
+                // form.submit(); // егер серверге жібергің келсе
+            }
+        });
+    });
+</script>
