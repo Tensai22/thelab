@@ -1,176 +1,175 @@
-﻿<!-- Начало Search Desktop -->
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<!-- Начало Search Desktop -->
 @Html.Partial("SearchDesktop")
 <!-- Конец Search Desktop -->
 <section class="banner-home-2 dark-background">
-	<div class="w-layout-blockcontainer base-container w-container">
-		<div class="w-layout-hflex home-2-banner-top">
-			<div class="w-layout-vflex about-title large">
-				<div class="w-layout-vflex vertical-20">
-					<div class="position-relative">
-						<h1 class="text-white">Our Packages</h1>
-					</div>
-					<div class="banner-2-description">
-						<div class="paragraph-large gray-color">
-							At The Lab, we believe in offering clear and competitive pricing tailored to your creative needs.
-						</div>
-					</div>
-				</div>
-			</div>
-			<a href="#Next" class="scroll-link-light w-inline-block">
-				<div>Scroll for more</div>
-				<div class="dot"></div>
-			</a>
-		</div>
-	</div>
+    <div class="w-layout-blockcontainer base-container w-container">
+        <div class="w-layout-hflex home-2-banner-top">
+            <div class="w-layout-vflex about-title large">
+                <div class="w-layout-vflex vertical-20">
+                    <div class="position-relative">
+                        <h1 class="text-white">@Localizer["Our"]</h1>
+                    </div>
+                    <div class="banner-2-description">
+                        <div class="paragraph-large gray-color">
+                            @Localizer["TheLab"]
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#Next" class="scroll-link-light w-inline-block">
+                <div>@Localizer["Scroll"]</div>
+                <div class="dot"></div>
+            </a>
+        </div>
+    </div>
 </section>
 
 <section class="section">
-	<div class="w-layout-blockcontainer base-container w-container">
-		<div class="w-layout-grid process-grid">
-			<div class="our-process-video-wrapper">
-				<div data-poster-url="~/images/process-poster-00001.jpg"
-					 data-video-urls="~/images/process-transcode.mp4,~/images/process-transcode.webm"
-					 data-autoplay="true"
-					 data-loop="true"
-					 data-wf-ignore="true"
-					 class="absolute-video w-background-video w-background-video-atom">
-					<video id="cb6f7044-ece0-4579-a6eb-9292a0df43ca-video" autoplay loop style='background-image:url("~/images/process-poster-00001.jpg")' muted playsinline data-wf-ignore="true" data-object-fit="cover">
-						<source src="~/images/process-transcode.mp4" data-wf-ignore="true" />
-						<source src="~/images/process-transcode.webm" data-wf-ignore="true" />
-					</video>
-				</div>
-				<div class="w-layout-hflex subtitle">
-					<div>pricing</div>
-					<div class="dot"></div>
-				</div>
-			</div>
-			<div class="w-layout-vflex vertical-40">
-				<h2>What’s Included in Every Package</h2>
-				<div class="w-layout-vflex vertical-16">
-					<div class="w-layout-hflex horizontal-20">
-						<div class="upper-text-600 gray-color">01.</div>
-						<div class="upper-text-600">Access to our talented creative team</div>
-					</div>
-					<div class="proces-item-description"><div class="gray-color">We start by getting to know your brand, your vision, and your target audience.</div></div>
-				</div>
-				<div class="w-layout-vflex vertical-16">
-					<div class="w-layout-hflex horizontal-20">
-						<div class="upper-text-600 gray-color">02.</div>
-						<div class="upper-text-600">Use of state-of-the-art equipment</div>
-					</div>
-					<div class="proces-item-description"><div class="gray-color">Our team of experts collaborates with you to develop a strong concept and compelling script.</div></div>
-				</div>
-				<div class="w-layout-vflex vertical-16">
-					<div class="w-layout-hflex horizontal-20">
-						<div class="upper-text-600 gray-color">03.</div>
-						<div class="upper-text-600">Transparent communication throughout the process</div>
-					</div>
-					<div class="proces-item-description">
-						<div class="gray-color">From location scouting and casting to scheduling and organizing, we handle all the logistics to ensure a smooth and efficient production phase.</div>
-					</div>
-				</div>
-				<div class="w-layout-vflex vertical-16">
-					<div class="w-layout-hflex horizontal-20">
-						<div class="upper-text-600 gray-color">04.</div>
-						<div class="upper-text-600">Commitment to delivering your unique vision</div>
-					</div>
-					<div class="proces-item-description">
-						<div class="gray-color">Our skilled crew works tirelessly to capture every moment with precision, using the latest equipment and techniques to achieve the highest quality results.</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="w-layout-blockcontainer base-container w-container">
+        <div class="w-layout-grid process-grid">
+            <div class="our-process-video-wrapper">
+                <div data-poster-url="~/images/process-poster-00001.jpg"
+                     data-video-urls="~/images/process-transcode.mp4,~/images/process-transcode.webm"
+                     data-autoplay="true"
+                     data-loop="true"
+                     data-wf-ignore="true"
+                     class="absolute-video w-background-video w-background-video-atom">
+                    <video id="cb6f7044-ece0-4579-a6eb-9292a0df43ca-video" autoplay loop style='background-image:url("~/images/process-poster-00001.jpg")' muted playsinline data-wf-ignore="true" data-object-fit="cover">
+                        <source src="~/images/process-transcode.mp4" data-wf-ignore="true" />
+                        <source src="~/images/process-transcode.webm" data-wf-ignore="true" />
+                    </video>
+                </div>
+                <div class="w-layout-hflex subtitle">
+                    <div>pricing</div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="w-layout-vflex vertical-40">
+                <h2>@Localizer["What"]</h2>
+                <div class="w-layout-vflex vertical-16">
+                    <div class="w-layout-hflex horizontal-20">
+                        <div class="upper-text-600 gray-color">01.</div>
+                        <div class="upper-text-600">@Localizer["Access"]</div>
+                    </div>
+                    <div class="proces-item-description"><div class="gray-color">@Localizer["Westart"]</div></div>
+                </div>
+                <div class="w-layout-vflex vertical-16">
+                    <div class="w-layout-hflex horizontal-20">
+                        <div class="upper-text-600 gray-color">02.</div>
+                        <div class="upper-text-600">Use of state-of-the-art equipment</div>
+                    </div>
+                    <div class="proces-item-description"><div class="gray-color">@Localizer["Expert"]</div></div>
+                </div>
+                <div class="w-layout-vflex vertical-16">
+                    <div class="w-layout-hflex horizontal-20">
+                        <div class="upper-text-600 gray-color">03.</div>
+                        <div class="upper-text-600">@Localizer["Transparent"]</div>
+                    </div>
+                    <div class="proces-item-description">
+                        <div class="gray-color">@Localizer["From"]</div>
+                    </div>
+                </div>
+                <div class="w-layout-vflex vertical-16">
+                    <div class="w-layout-hflex horizontal-20">
+                        <div class="upper-text-600 gray-color">04.</div>
+                        <div class="upper-text-600">@Localizer["Commitment"]</div>
+                    </div>
+                    <div class="proces-item-description">
+                        <div class="gray-color">@Localizer["OurSkilled"]</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
 <div id="Next" class="section light-background">
-	<div class="base-container w-container">
-		<div class="w-layout-vflex vertical-100 centered">
-			<div class="w-layout-hflex subtitle white">
-				<div>We are more than just a video production studio</div>
-				<div class="dot"></div>
-			</div>
-			<h2 data-w-id="4b0f082b-971c-7e91-7952-6d117037c076" style="opacity:0" class="pricing-title">Our packages are designed to meet your goals without compromising on quality</h2>
-		</div>
-		<div class="pricing-plans-wrapper">
-			<div id="w-node-c5f23e37-1375-d588-c36d-7dd9adad693e-1425c4f0" data-w-id="c5f23e37-1375-d588-c36d-7dd9adad693e" style="opacity:0" class="pricing-plan-item">
-				<h3 class="pricing-plan-item-title">Essential</h3>
-				<p>Perfect for small projects and startups looking to make an impact.</p>
-				<div class="pricing-small-text"><p class="upper-text">Starting at</p></div>
-				<div class="pricing-plan-price-wrapper">
-					<div class="pricing-plan-currency-icon">$</div>
-					<h6 class="upper-text"><span class="pricing-plan-price">500</span></h6>
-				</div>
-				<a data-w-id="0f21d814-468b-81da-0a08-dc79427a4058" style="opacity:0" href="/contact-us" class="primary-button w-inline-block">
-					<div>Buy now</div>
-					<div class="clip">
-						<div style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-							 class="clip-icon-wrapper">
-							<img src="/images/group-201-20-4-.svg" loading="lazy" alt="icon" class="btn-icon" />
-						</div>
-						<div class="clip-icon-wrapper right"><img src="/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" /></div>
-					</div>
-				</a>
-				<ul role="list" class="pricing-plan-list">
-					<li>Up to 2 minutes of edited video</li>
-					<li>Delivery within 7 days</li>
-					<li>Single filming location</li>
-					<li>Script consultation</li>
-				</ul>
-			</div>
-			<div id="w-node-_79d18c5a-c0ff-3dd2-64ff-fa0e8ffcd236-1425c4f0" data-w-id="79d18c5a-c0ff-3dd2-64ff-fa0e8ffcd236" style="opacity:0" class="pricing-plan-item">
-				<h3 class="pricing-plan-item-title">Professional</h3>
-				<p>Ideal for businesses and brands that need a professional production.</p>
-				<div class="pricing-small-text"><p class="upper-text">Starting at</p></div>
-				<div class="pricing-plan-price-wrapper">
-					<div class="pricing-plan-currency-icon">$</div>
-					<h6 class="upper-text"><span class="pricing-plan-price">1500</span></h6>
-				</div>
-				<a data-w-id="58ed7af9-8fee-cbb1-f4dc-e152f8ab54a7" style="opacity:0" href="/contact-us" class="primary-button w-inline-block">
-					<div>Buy now</div>
-					<div class="clip">
-						<div style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-							 class="clip-icon-wrapper">
-							<img src="/images/group-201-20-4-.svg" loading="lazy" alt="icon" class="btn-icon" />
-						</div>
-						<div class="clip-icon-wrapper right"><img src="/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" /></div>
-					</div>
-				</a>
-				<ul role="list" class="pricing-plan-list">
-					<li>Up to 5 minutes of edited video</li>
-					<li>Delivery within 7 days</li>
-					<li>Single filming location</li>
-					<li>Script consultation</li>
-				</ul>
-			</div>
-			<div id="w-node-febd7a44-7b36-7d73-9013-2f41cc37aa18-1425c4f0" data-w-id="febd7a44-7b36-7d73-9013-2f41cc37aa18" style="opacity:0" class="pricing-plan-item">
-				<h3 class="pricing-plan-item-title">Cinematic</h3>
-				<p class="pricing-description">For those seeking top-tier, cinematic-quality visuals.</p>
-				<div class="pricing-small-text"><p class="upper-text">Starting at</p></div>
-				<div class="pricing-plan-price-wrapper">
-					<div class="pricing-plan-currency-icon">$</div>
-					<h6 class="upper-text"><span class="pricing-plan-price">5000</span></h6>
-				</div>
-				<a data-w-id="e70de01e-82d4-1297-3091-5fb415f9e87e" style="opacity:0" href="/contact-us" class="primary-button w-inline-block">
-					<div>Buy now</div>
-					<div class="clip">
-						<div style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-							 class="clip-icon-wrapper">
-							<img src="/images/group-201-20-4-.svg" loading="lazy" alt="icon" class="btn-icon" />
-						</div>
-						<div class="clip-icon-wrapper right"><img src="/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" /></div>
-					</div>
-				</a>
-				<ul role="list" class="pricing-plan-list">
-					<li>Up to 10 minutes of edited video</li>
-					<li>Delivery within 7 days</li>
-					<li>Single filming location</li>
-					<li>Script consultation</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+    <div class="base-container w-container">
+        <div class="w-layout-vflex vertical-100 centered">
+            <div class="w-layout-hflex subtitle white">
+                <div>@Localizer["WeAre"]</div>
+                <div class="dot"></div>
+            </div>
+            <h2 class="pricing-title">@Localizer["quality"]</h2>
+        </div>
+        <div class="pricing-plans-wrapper">
+            <div class="pricing-plan-item">
+                <h3 class="pricing-plan-item-title">@Localizer["Essential"]</h3>
+                <p>@Localizer["Perfect"]</p>
+                <div class="pricing-small-text"><p class="upper-text">@Localizer["Starting"]</p></div>
+                <div class="pricing-plan-price-wrapper">
+                    <div class="pricing-plan-currency-icon">$</div>
+                    <h6 class="upper-text"><span class="pricing-plan-price">500</span></h6>
+                </div>
+                <a href="/contact-us" class="primary-button w-inline-block">
+                    <div>@Localizer["Buy"]</div>
+                    <div class="clip">
+                        <div class="clip-icon-wrapper">
+                            <img src="~/images/group-201-20-4-.svg" loading="lazy" alt="icon" class="btn-icon" />
+                        </div>
+                        <div class="clip-icon-wrapper right"><img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" /></div>
+                    </div>
+                </a>
+                <ul role="list" class="pricing-plan-list">
+                    <li>Up to 2 minutes of edited video</li>
+                    <li>Delivery within 7 days</li>
+                    <li>Single filming location</li>
+                    <li>Script consultation</li>
+                </ul>
+            </div>
+            <div class="pricing-plan-item">
+                <h3 class="pricing-plan-item-title">Professional</h3>
+                <p>Ideal for businesses and brands that need a professional production.</p>
+                <div class="pricing-small-text"><p class="upper-text">Starting at</p></div>
+                <div class="pricing-plan-price-wrapper">
+                    <div class="pricing-plan-currency-icon">$</div>
+                    <h6 class="upper-text"><span class="pricing-plan-price">1500</span></h6>
+                </div>
+                <a href="/contact-us" class="primary-button w-inline-block">
+                    <div>Buy now</div>
+                    <div class="clip">
+                        <div class="clip-icon-wrapper">
+                            <img src="~/images/group-201-20-4-.svg" loading="lazy" alt="icon" class="btn-icon" />
+                        </div>
+                        <div class="clip-icon-wrapper right"><img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" /></div>
+                    </div>
+                </a>
+                <ul role="list" class="pricing-plan-list">
+                    <li>Up to 5 minutes of edited video</li>
+                    <li>Delivery within 7 days</li>
+                    <li>Single filming location</li>
+                    <li>Script consultation</li>
+                </ul>
+            </div>
+            <div class="pricing-plan-item">
+                <h3 class="pricing-plan-item-title">Cinematic</h3>
+                <p class="pricing-description">For those seeking top-tier, cinematic-quality visuals.</p>
+                <div class="pricing-small-text"><p class="upper-text">Starting at</p></div>
+                <div class="pricing-plan-price-wrapper">
+                    <div class="pricing-plan-currency-icon">$</div>
+                    <h6 class="upper-text"><span class="pricing-plan-price">5000</span></h6>
+                </div>
+                <a href="/contact-us" class="primary-button w-inline-block">
+                    <div>Buy now</div>
+                    <div class="clip">
+                        <div class="clip-icon-wrapper">
+                            <img src="~/images/group-201-20-4-.svg" loading="lazy" alt="icon" class="btn-icon" />
+                        </div>
+                        <div class="clip-icon-wrapper right"><img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" /></div>
+                    </div>
+                </a>
+                <ul role="list" class="pricing-plan-list">
+                    <li>Up to 10 minutes of edited video</li>
+                    <li>Delivery within 7 days</li>
+                    <li>Single filming location</li>
+                    <li>Script consultation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- Начало dark-bg-without-bottom -->
 @Html.Partial("DarkBgWithoutBottom")
