@@ -1,4 +1,6 @@
-﻿﻿@using Microsoft.AspNetCore.Builder
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+﻿@using Microsoft.AspNetCore.Builder
 @using Microsoft.AspNetCore.Mvc.Localization
 @using Microsoft.Extensions.Options
 @using System.Globalization
@@ -36,35 +38,35 @@
                                     <span class="nav-dropdown-link-line"> </span>About Us
                                 </a>
                                 <a href="@Url.Action("services", "Services")" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"> </span>Services
+                                    <span class="nav-dropdown-link-line">@Localizer["Services"] </span>
                                 </a>
                                 <a href="@Url.Action("OurTeam", "Team")" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"> </span>TEAM
+                                    <span class="nav-dropdown-link-line"> </span>@Localizer["TEAM"]
                                 </a>
                                 <a href="@Url.Action("Pricing", "Services")" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"> </span>Pricing
+                                    <span class="nav-dropdown-link-line"> </span>@Localizer["Pricing"]
                                 </a>
                                 <a href="@Url.Action("Testimonials", "Services")" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"> </span>Testimonials
+                                    <span class="nav-dropdown-link-line"> </span>@Localizer["Testimonials"]
                                 </a>
                                 <a href="@Url.Action("FAQ", "Home")" class="nav-dropdown-link w-dropdown-link">
-                                    <span class="nav-dropdown-link-line"> </span>FAQ
+                                    <span class="nav-dropdown-link-line"> </span>@Localizer["FAQ"]
                                 </a>
                             </div>
                         </nav>
                     </div>
-                    <a href="@Url.Action("Works1", "Works")" class="nav-link w-nav-link">Our Works</a><a href="@Url.Action("Blog1", "works")" class="nav-link w-nav-link">Blog</a>
+                    <a href="@Url.Action("Works1", "Works")" class="nav-link w-nav-link">Our Works</a><a href="@Url.Action("Blog1", "works")" class="nav-link w-nav-link">@Localizer["Blog"]</a>
                     <div data-delay="0" data-hover="true" data-w-id="98682d76-9867-e65a-6f30-e57735e11fd9" class="nav-dropdown w-dropdown">
                         <div class="nav-dropdown-toggle w-dropdown-toggle">
                             <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
-                            <div class="nav-item-title">All Pages</div>
+                            <div class="nav-item-title">@Localizer["All Pages"]</div>
                         </div>
                         <nav class="nav-dropdown-list megamenu w-dropdown-list">
                             <div class="nav-dropdown-column">
                                 <div class="nav-dropdown-link-wrapper">
-                                    <a href="@Url.Action("AboutUs", "Home")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>About Us</a>
-                                    <a href="@Url.Action("OurTeam", "Team")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Our Team</a>
-                                    <a href="@Url.Action("Services", "Services")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Our services</a>
+                                    <a href="@Url.Action("AboutUs", "Home")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>@Localizer["About Us"]</a>
+                                    <a href="@Url.Action("OurTeam", "Team")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>@Localizer["Our Team"]</a>
+                                    <a href="@Url.Action("Services", "Services")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>@Localizer["Our services"]</a>
                                 </div>
                             </div>
                             <div class="nav-dropdown-column">
@@ -72,19 +74,19 @@
                                     <div class="collection-list-wrapper w-dyn-list">
                                         <div role="list" class="w-dyn-items">
                                             <div role="listitem" class="w-dyn-item">
-                                                <a href="@Url.Action("Services", "Services")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Service Details</a>
+                                                <a href="@Url.Action("Services", "Services")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>@Localizer["Service Details"]</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="@Url.Action("Pricing", "Services")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Pricing</a>
-                                    <a href="@Url.Action("FAQ", "Home")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>FAQ</a>
+                                    <a href="@Url.Action("Pricing", "Services")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>@Localizer["Pricing"]</a>
+                                    <a href="@Url.Action("FAQ", "Home")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>@Localizer["FAQ"]</a>
                                 </div>
                             </div>
                             <div class="nav-dropdown-column">
                                 <div class="nav-dropdown-link-wrapper">
-                                    <a href="@Url.Action("Contact", "Home")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Contact Us</a>
-                                    <a href="@Url.Action("Works1", "Works")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Our Works</a>
-                                    <a href="@Url.Action("Blog1", "Works")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>Blog</a>
+                                    <a href="@Url.Action("Contact", "Home")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>@Localizer["Contact us"]</a>
+                                    <a href="@Url.Action("Works1", "Works")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>@Localizer["Our Works"]</a>
+                                    <a href="@Url.Action("Blog1", "Works")" class="nav-dropdown-link w-dropdown-link"><span class="nav-dropdown-link-line"> </span>@Localizer["Blog"]</a>
                                 </div>
                             </div>
                         </nav>
@@ -92,7 +94,7 @@
                     </div>
                     <div class="nav-btn-wrapper desctop-hidden">
                         <a data-w-id="98682d76-9867-e65a-6f30-e57735e12040" href="/contact-us" class="nav-link-cta w-inline-block">
-                            <div>Let&#x27;s Talk</div>
+                            <div>@Localizer["Talk"]</div>
                             <div class="hover-line header"><div class="hover-line-fill white"></div></div>
                         </a>
                     </div>
@@ -124,7 +126,7 @@
             </nav>
             <div class="nav-btn-wrapper">
                 <a data-w-id="98682d76-9867-e65a-6f30-e57735e12046" href="/contact-us" class="nav-link-cta w-inline-block">
-                    <div>Let&#x27;s Talk</div>
+                    <div>@Localizer["Talk"]</div>
                     <div class="hover-line header"><div class="hover-line-fill white"></div></div>
                 </a>
             </div>

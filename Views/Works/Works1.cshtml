@@ -1,4 +1,6 @@
-﻿<!-- Начало Search Desktop -->
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<!-- Начало Search Desktop -->
 @Html.Partial("SearchDesktop")
 <!-- Конец Search Desktop -->
 <section class="banner-home-2 dark-background">
@@ -7,17 +9,17 @@
             <div class="about-title large">
                 <div class="vertical-20">
                     <div class="position-relative">
-                        <h1 class="text-white">Our Works</h1>
+                        <h1 class="text-white">@Localizer["Our Works"]</h1>
                     </div>
                     <div class="banner-2-description">
                         <div class="paragraph-large gray-color">
-                            Each project reflects our dedication to excellence, creativity, and innovation.
+                            @Localizer["Each"]
                         </div>
                     </div>
                 </div>
             </div>
             <a href="#scroll" class="scroll-link-light">
-                <div>Scroll for more</div>
+                <div>@Localizer["Scroll"]</div>
                 <div class="dot"></div>
             </a>
         </div>
@@ -47,20 +49,20 @@
                             <div class="vertical-8">
                                 <div class="clip">
                                     <div class="clip-text-wrapper">
-                                        <a href="/works/fuji-mountain-cinematic" class="works-title white">Fuji mountain cinematic</a>
+                                        <a href="/works/fuji-mountain-cinematic" class="works-title white">@Localizer["Fuji"]</a>
                                     </div>
                                     <div class="clip-text-wrapper bottom">
-                                        <a href="/works/fuji-mountain-cinematic" class="works-title white">Fuji mountain cinematic</a>
+                                        <a href="/works/fuji-mountain-cinematic" class="works-title white">@Localizer["Fuji"]</a>
                                     </div>
                                 </div>
                                 <div class="date-work-wrapp">
-                                    <div>Yolo studio</div>
+                                    <div>@Localizer["Yolo studio"]</div>
                                     <div>/</div>
                                     <div>2025</div>
                                 </div>
                             </div>
                             <a href="/works/fuji-mountain-cinematic" class="link-with-line white">
-                                <div class="text-white">View Project</div>
+                                <div class="text-white">@Localizer["View Project"]</div>
                                 <img src="~/images/group-201.svg" loading="lazy" alt="icon" class="link-icon" />
                                 <div class="hover-line"><div class="hover-line-fill white"></div></div>
                             </a>
@@ -84,20 +86,22 @@
                             <div class="vertical-8">
                                 <div class="clip">
                                     <div class="clip-text-wrapper">
-                                        <a href="/works/love-story" class="works-title white">Love story</a>
+                                        <a href="/works/love-story" class="works-title white">@Localizer["Love story"]</a>
                                     </div>
                                     <div class="clip-text-wrapper bottom">
-                                        <a href="/works/love-story" class="works-title white">Love story</a>
+                                        <a href="/works/love-story" class="works-title white">@Localizer["Love story"]</a>
                                     </div>
                                 </div>
                                 <div class="date-work-wrapp">
-                                    <div>Kate &amp; Daniel</div>
+                                    <div>@Localizer["Kate &amp; Daniel"]</div>
                                     <div>/</div>
                                     <div>2025</div>
                                 </div>
                             </div>
                             <a href="/works/love-story" class="link-with-line white">
-                                <div class="text-white">View Project</div>
+                                <div class="text-white">
+                                    @Localizer["View Project"
+                                ]</div>
                                 <img src="~/images/group-201.svg" loading="lazy" alt="icon" class="link-icon" />
                                 <div class="hover-line"><div class="hover-line-fill white"></div></div>
                             </a>
@@ -121,10 +125,10 @@
                             <div class="vertical-8">
                                 <div class="clip">
                                     <div class="clip-text-wrapper">
-                                        <a href="/works/winter-arcane" class="works-title white">Winter Arcane</a>
+                                        <a href="/works/winter-arcane" class="works-title white">@Localizer["Winter Arcane"]</a>
                                     </div>
                                     <div class="clip-text-wrapper bottom">
-                                        <a href="/works/winter-arcane" class="works-title white">Winter Arcane</a>
+                                        <a href="/works/winter-arcane" class="works-title white">@Localizer["Winter Arcane"]</a>
                                     </div>
                                 </div>
                                 <div class="date-work-wrapp">
@@ -134,7 +138,7 @@
                                 </div>
                             </div>
                             <a href="/works/winter-arcane" class="link-with-line white">
-                                <div class="text-white">View Project</div>
+                                <div class="text-white">@Localizer["View Project"]</div>
                                 <img src="~/images/group-201.svg" loading="lazy" alt="icon" class="link-icon" />
                                 <div class="hover-line"><div class="hover-line-fill white"></div></div>
                             </a>
@@ -158,20 +162,20 @@
                             <div class="w-layout-vflex vertical-8">
                                 <div class="clip">
                                     <div class="clip-text-wrapper">
-                                        <a href="/works/quiet-depth" class="works-title white">Quiet Depth</a>
+                                        <a href="/works/quiet-depth" class="works-title white">@Localizer["Quiet Depth"]</a>
                                     </div>
                                     <div class="clip-text-wrapper bottom">
-                                        <a href="/works/quiet-depth" class="works-title white">Quiet Depth</a>
+                                        <a href="/works/quiet-depth" class="works-title white">@Localizer["Quiet Depth"]</a>
                                     </div>
                                 </div>
                                 <div class="w-layout-hflex date-work-wrapp">
-                                    <div>Insight Studio</div>
+                                    <div>@Localizer["Insight Studio"]</div>
                                     <div>/</div>
                                     <div>2022</div>
                                 </div>
                             </div>
                             <a href="/works/quiet-depth" class="link-with-line white w-inline-block">
-                                <div class="text-white">View Project</div>
+                                <div class="text-white">@Localizer["View Project"]</div>
                                 <img src="~/images/group-201.svg" loading="lazy" alt="icon" class="link-icon" />
                                 <div class="hover-line"><div class="hover-line-fill white"></div></div>
                             </a>
@@ -195,20 +199,20 @@
                             <div class="w-layout-vflex vertical-8">
                                 <div class="clip">
                                     <div class="clip-text-wrapper">
-                                        <a href="/works/hidden-gaze" class="works-title white">Hidden Gaze</a>
+                                        <a href="/works/hidden-gaze" class="works-title white">@Localizer["Hidden Gaze"]</a>
                                     </div>
                                     <div class="clip-text-wrapper bottom">
-                                        <a href="/works/hidden-gaze" class="works-title white">Hidden Gaze</a>
+                                        <a href="/works/hidden-gaze" class="works-title white">@Localizer["Hidden Gaze"]</a>
                                     </div>
                                 </div>
                                 <div class="w-layout-hflex date-work-wrapp">
-                                    <div>Insight Studio</div>
+                                    <div>@Localizer["Insight Studio"]</div>
                                     <div>/</div>
                                     <div>2022</div>
                                 </div>
                             </div>
                             <a href="/works/hidden-gaze" class="link-with-line white w-inline-block">
-                                <div class="text-white">View Project</div>
+                                <div class="text-white">@Localizer["View Project"]</div>
                                 <img src="~/images/group-201.svg" loading="lazy" alt="icon" class="link-icon" />
                                 <div class="hover-line"><div class="hover-line-fill white"></div></div>
                             </a>
@@ -232,20 +236,20 @@
                             <div class="w-layout-vflex vertical-8">
                                 <div class="clip">
                                     <div class="clip-text-wrapper">
-                                        <a href="/works/silent-reflection" class="works-title white">Silent Reflection</a>
+                                        <a href="/works/silent-reflection" class="works-title white">@Localizer["Silent Reflection"]</a>
                                     </div>
                                     <div class="clip-text-wrapper bottom">
-                                        <a href="/works/silent-reflection" class="works-title white">Silent Reflection</a>
+                                        <a href="/works/silent-reflection" class="works-title white">@Localizer["Silent Reflection"]</a>
                                     </div>
                                 </div>
                                 <div class="w-layout-hflex date-work-wrapp">
-                                    <div>Insight Studio</div>
+                                    <div>@Localizer["Insight Studio"]</div>
                                     <div>/</div>
                                     <div>2022</div>
                                 </div>
                             </div>
                             <a href="/works/silent-reflection" class="link-with-line white w-inline-block">
-                                <div class="text-white">View Project</div>
+                                <div class="text-white">@Localizer["View Projec"]t</div>
                                 <img src="~/images/group-201.svg" loading="lazy" alt="icon" class="link-icon" />
                                 <div class="hover-line"><div class="hover-line-fill white"></div></div>
                             </a>

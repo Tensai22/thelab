@@ -1,4 +1,6 @@
-﻿<!-- Начало Search Desktop -->
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<!-- Начало Search Desktop -->
 @Html.Partial("SearchDesktop")
 <!-- Конец Search Desktop -->
 <section class="banner-home-2 dark-background">
@@ -7,10 +9,10 @@
 			<div class="w-layout-vflex about-title small">
 				<div class="w-layout-vflex vertical-20">
 					<div class="position-relative">
-						<h1 class="text-white">Voices that inspire The Lab</h1>
+						<h1 class="text-white">@Localizer["Voices"]</h1>
 					</div>
 					<div class="banner-2-description">
-						<div class="paragraph-large gray-color">Hear from our clients and collaborators about their experiences working with TheLab.</div>
+						<div class="paragraph-large gray-color">@Localizer["Hear"]</div>
 					</div>
 				</div>
 			</div>
@@ -41,13 +43,13 @@
 	<div class="w-layout-blockcontainer base-container position-relative w-container">
 		<div class="w-layout-vflex vertical-40 centered">
 			<div class="w-layout-hflex subtitle">
-				<div>Reviews</div>
+				<div>@Localizer["Reviews"]</div>
 				<div class="dot"></div>
 			</div>
 			<div class="w-layout-vflex vertical-20 centered">
-				<h2 class="home-3-testimonials-title">Our clients’ satisfaction is our top priority.</h2>
+				<h2 class="home-3-testimonials-title">@Localizer["Ourclients"]</h2>
 				<div class="rewiews-desription">
-					<div class="gray-color">We’re proud of the relationships we’ve built and the impact our videos have made.</div>
+					<div class="gray-color">@Localizer["We’re"]</div>
 				</div>
 			</div>
 			<div class="w-layout-grid testimonials-grid">
@@ -61,10 +63,10 @@
 							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
 						</div>
 						<h5>
-							"From start to finish, The Lab made the process easy and enjoyable. Their team understood our goals and brought fresh, innovative ideas to the table. The video they produced helped us connect with our audience in a way we hadn’t imagined."
+							@Localizer["From start"]	
 						</h5>
 					</div>
-					<div class="upper-text-600 gray-color">Martin, CEO GreenEarth Solutions</div>
+					<div class="upper-text-600 gray-color">@Localizer["Martin"]</div>
 				</div>
 				<div class="w-layout-vflex slide-intro">
 					<div class="w-layout-vflex vertical-20">
@@ -76,10 +78,9 @@
 							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
 						</div>
 						<h5>
-							"We’ve worked with many studios, but The Lab stands out. Their expertise, communication, and passion for storytelling are unmatched. We couldn’t be happier with the final result, and it’s helping us reach new customers."
-						</h5>
+							@Localizer["We’veworked"]</h5>
 					</div>
-					<div class="upper-text-600 gray-color">Rebecca, Creative Director, Urban</div>
+					<div class="upper-text-600 gray-color">@Localizer["Rebecca"]</div>
 				</div>
 				<div class="w-layout-vflex slide-intro">
 					<div class="w-layout-vflex vertical-20">
@@ -91,10 +92,10 @@
 							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
 						</div>
 						<h5>
-							"From start to finish, The Lab made the process easy and enjoyable. Their team understood our goals and brought fresh, innovative ideas to the table. The video they produced helped us connect with our audience in a way we hadn’t imagined."
+							@Localizer["Frofinish"]
 						</h5>
 					</div>
-					<div class="upper-text-600 gray-color">Martin, CEO GreenEarth Solutions</div>
+					<div class="upper-text-600 gray-color">@Localizer["Solutions"]</div>
 				</div>
 				<div class="w-layout-vflex slide-intro">
 					<div class="w-layout-vflex vertical-20">
@@ -106,10 +107,10 @@
 							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
 						</div>
 						<h5>
-							"The Lab took our vision and turned it into a reality. The team was incredibly professional, creative, and attentive to every detail. The final product exceeded our expectations, and it’s made a huge impact on our brand."
+							@Localizer["took"]
 						</h5>
 					</div>
-					<div class="upper-text-600 gray-color">Daniel, CEO AZS Agency</div>
+					<div class="upper-text-600 gray-color">@Localizer["Daniel"]</div>
 				</div>
 			</div>
 		</div>
@@ -127,7 +128,7 @@
 							<div class="testimonials-page-text-wrapper">
 								<div class="clip">
 									<h2 class="testimonial-text-home-2">
-										"The Lab took our vision and turned it into a reality. The team was incredibly professional, creative, and attentive to every detail. The final product exceeded our expectations, and it’s made a huge impact on our brand."
+										@Localizer["vision"]
 									</h2>
 								</div>
 							</div>
@@ -136,7 +137,7 @@
 									<div class="w-layout-vflex vertical-20 mobile-flex-hor">
 										<img src="~/images/rectangle-2064-20-1-.webp" loading="lazy" width="132" alt="man" class="testimonials-image small" />
 										<div class="position-testimonials">
-											<div class="upper-text-600">Martin, <span class="gray-color">CEO GreenE Solutions</span></div>
+											<div class="upper-text-600">Martin, <span class="gray-color">@Localizer["CEO"]</span></div>
 										</div>
 									</div>
 								</div>
@@ -148,7 +149,7 @@
 							<div class="testimonials-page-text-wrapper">
 								<div class="clip">
 									<h2 class="testimonial-text-home-2">
-										"From start to finish, The Lab team understood our goals and brought fresh, innovative ideas to the table. The video they produced helped us connect with our audience in a way we hadn’t imagined."
+										@Localizer["team understood"]
 									</h2>
 								</div>
 							</div>
@@ -157,7 +158,7 @@
 									<div class="w-layout-vflex vertical-20 mobile-flex-hor">
 										<img src="~/images/member-photo-2.webp" loading="lazy" width="132" alt="photo" class="testimonials-image small" />
 										<div class="position-testimonials">
-											<div class="upper-text-600">Daniel, <span class="gray-color">CEO AZS Agency</span></div>
+											<div class="upper-text-600">Daniel, <span class="gray-color" @Localizer[">AZS"]</span></div>
 										</div>
 									</div>
 								</div>
@@ -169,7 +170,7 @@
 							<div class="testimonials-page-text-wrapper">
 								<div class="clip">
 									<h2 class="testimonial-text-home-2">
-										"The Lab took our vision and turned it into a reality. The team was incredibly professional, creative, and attentive to every detail. The final product exceeded our expectations, and it’s made a huge impact on our brand."
+										@Localizer["reality"]
 									</h2>
 								</div>
 							</div>
@@ -178,7 +179,7 @@
 									<div class="w-layout-vflex vertical-20 mobile-flex-hor">
 										<img src="~/images/member-photo-9.webp" loading="lazy" width="132" alt="photo" class="testimonials-image small" />
 										<div class="position-testimonials">
-											<div class="upper-text-600">Rebecca, <span class="gray-color">Creative Director, Urban</span></div>
+											<div class="upper-text-600">Rebecca, <span class="gray-color">@Localizer["Urban"]</span></div>
 										</div>
 									</div>
 								</div>
@@ -190,7 +191,7 @@
 							<div class="testimonials-page-text-wrapper">
 								<div class="clip">
 									<h2 class="testimonial-text-home-2">
-										"We’ve worked with many studios, but The Lab stands out. Their expertise, communication, and passion for storytelling are unmatched. We couldn’t be happier with the final result."
+										@Localizer["stands out"]
 									</h2>
 								</div>
 							</div>
@@ -199,7 +200,7 @@
 									<div class="w-layout-vflex vertical-20 mobile-flex-hor">
 										<img src="~/images/member-photo.webp" loading="lazy" width="132" alt="photo" class="testimonials-image small" />
 										<div class="position-testimonials">
-											<div class="upper-text-600">Anna, <span class="gray-color">CEO Flowers Shop</span></div>
+											<div class="upper-text-600">Anna, <span class="gray-color">@Localizer["Flower"]</span></div>
 										</div>
 									</div>
 								</div>
@@ -229,8 +230,8 @@
 			<div class="w-layout-vflex cta-right">
 				<div class="cta-text-wrapper">
 					<h2 class="text-white">
-						<span class="text-span-image">.</span> Ready to bring your vision to life?
-						<span class="gray-color">Our team at The Lab is here to make it happen. Get in touch with us today to start your next video project!</span>
+						<span class="text-span-image">.</span>@Localizer["ready"]
+						<span class="gray-color">@Localizer["ourteam"]
 					</h2>
 					<div class="cta-video-absolute w-background-video w-background-video-atom">
 						<video style='background-image:url("~/images/cta-poster-00001.jpg")' muted playsinline data-object-fit="cover" autoplay loop>
@@ -240,7 +241,7 @@
 					</div>
 				</div>
 				<a href="~/contact-us" class="primary-button-white w-inline-block">
-					<div>Discover next project</div>
+					<div>@Localizer["Discover"]</div>
 					<div class="clip">
 						<div class="clip-icon-wrapper">
 							<img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" />
