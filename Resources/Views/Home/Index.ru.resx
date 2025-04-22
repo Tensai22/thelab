@@ -117,25 +117,118 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PerformanceTitle" xml:space="preserve">
+  <data name="a" xml:space="preserve">
+    <value>Шаблон веб-потока для видеопроизводства</value>
+  </data>
+  <data name="b" xml:space="preserve">
+    <value>3 целевые страницы. 16 внутренних страниц.</value>
+  </data>
+  <data name="c" xml:space="preserve">
     <value>Ультра производительность</value>
   </data>
-  <data name="PerformanceDescription" xml:space="preserve">
-    <value>Загрузите сайт с молниеносной скоростью. Оптимизированный код позволяет Thelab быстро загружаться при любом трафике.</value>
+  <data name="d" xml:space="preserve">
+    <value>Загружайте свой сайт с молниеносной скоростью реагирования. Оптимизированный код позволяет Thelab быстро загружаться при любых условиях трафика.</value>
   </data>
-  <data name="GooglePageSpeed" xml:space="preserve">
-    <value>Скорость Google страниц</value>
-  </data>
-  <data name="PerformanceGrade" xml:space="preserve">
+  <data name="e" xml:space="preserve">
     <value>Оценка производительности</value>
   </data>
-  <data name="PageSpeedScore" xml:space="preserve">
-    <value>Рейтинг скорости страницы</value>
+  <data name="f" xml:space="preserve">
+    <value>Счет</value>
   </data>
-  <data name="GTmetrixYSlowScore" xml:space="preserve">
-    <value>Оценка GTmetrix YSlow</value>
+  <data name="g" xml:space="preserve">
+    <value>Основные характеристики</value>
   </data>
-  <data name="KeyFeatures" xml:space="preserve">
-    <value>Ключевые особенности</value>
+  <data name="h" xml:space="preserve">
+    <value>Дружественная поддержка</value>
+  </data>
+  <data name="i" xml:space="preserve">
+    <value>Нашли ошибку или у вас возникли проблемы? Не стесняйтесь отправить нам электронное письмо по адресу</value>
+  </data>
+  <data name="j" xml:space="preserve">
+    <value>Оптимизировано для поисковых систем</value>
+  </data>
+  <data name="k" xml:space="preserve">
+    <value>Получите рейтинг в SERP. Шаблон оптимизирован под требования поисковых систем.</value>
+  </data>
+  <data name="l" xml:space="preserve">
+    <value>Индивидуальная типографика</value>
+  </data>
+  <data name="m" xml:space="preserve">
+    <value>Шаблон позволяет вам настраивать типографику и выбирать цвета в соответствии с вашими потребностями.</value>
+  </data>
+  <data name="n" xml:space="preserve">
+    <value>Основные внутренние страницы</value>
+  </data>
+  <data name="o" xml:space="preserve">
+    <value>Безграничный потенциал в создании страниц, которые вам нужны. Мы создали основные макеты страниц, включая: О нас, Цены, Контакты и многое другое.</value>
+  </data>
+  <data name="p" xml:space="preserve">
+    <value>Современные Технологии</value>
+  </data>
+  <data name="q" xml:space="preserve">
+    <value>Шаблон хорошо спроектирован и нацелен на конверсии. Создан с помощью HTML, CSS и Javascript в визуальном холсте.</value>
+  </data>
+  <data name="r" xml:space="preserve">
+    <value>Высокая скорость работы</value>
+  </data>
+  <data name="s" xml:space="preserve">
+    <value>Загружайте свой сайт с молниеносной реакцией. Оптимизированный код позволяет шаблону быстро загружаться при любых условиях трафика.</value>
+  </data>
+  <data name="t" xml:space="preserve">
+    <value>Пожизненные обновления</value>
+  </data>
+  <data name="u" xml:space="preserve">
+    <value>Оставайтесь в курсе последних версий нашего шаблона, не делая этого вручную.</value>
+  </data>
+  <data name="v" xml:space="preserve">
+    <value>Широкие возможности настройки</value>
+  </data>
+  <data name="w" xml:space="preserve">
+    <value>Сделайте свой веб-сайт таким, каким вы хотите его видеть, настроив его с помощью наших встроенных инструментов и настроек — без навыков кодирования!</value>
+  </data>
+  <data name="x" xml:space="preserve">
+    <value>Внутренние страницы</value>
+  </data>
+  <data name="y" xml:space="preserve">
+    <value>Безграничный потенциал в создании страниц, которые вам нужны. Мы создали основные макеты страниц, включая: О нас, Услуги, Работы и многое другое.</value>
+  </data>
+  <data name="z" xml:space="preserve">
+    <value>О нас</value>
+  </data>
+  <data name="za" xml:space="preserve">
+    <value>Наша команда</value>
+  </data>
+  <data name="zb" xml:space="preserve">
+    <value>Наши услуги</value>
+  </data>
+  <data name="zc" xml:space="preserve">
+    <value>Подробности услуги</value>
+  </data>
+  <data name="zd" xml:space="preserve">
+    <value>Наши Работы</value>
+  </data>
+  <data name="ze" xml:space="preserve">
+    <value>Work Details</value>
+  </data>
+  <data name="zf" xml:space="preserve">
+    <value>Отзывы</value>
+  </data>
+  <data name="zg" xml:space="preserve">
+    <value>Ценообразование</value>
+  </data>
+  <data name="zh" xml:space="preserve">
+    <value>Связаться с нами</value>
+  </data>
+  <data name="zi" xml:space="preserve">
+    <value>Подробности блога</value>
+  </data>
+  <data name="zj" xml:space="preserve">
+    <value>Баланс внешней и внутренней красоты</value>
+  </data>
+  <data name="zk" xml:space="preserve">
+    <value>Начните создавать свой следующий великолепный сайт уже сейчас.</value>
+  </data>
+  <data name="zl" xml:space="preserve">
+    <value>Покупка</value>
   </data>
 </root>

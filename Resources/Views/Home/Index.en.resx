@@ -117,25 +117,118 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PerformanceTitle" xml:space="preserve">
-    <value>Ultra Performance</value>
+  <data name="a" xml:space="preserve">
+    <value>Video Production Webflow Template</value>
   </data>
-  <data name="PerformanceDescription" xml:space="preserve">
+  <data name="b" xml:space="preserve">
+    <value>3 Landing Pages. 16 Inner Pages.</value>
+  </data>
+  <data name="c" xml:space="preserve">
+    <value>Ultra performance</value>
+  </data>
+  <data name="d" xml:space="preserve">
     <value>Load your site with a lightning-fast responsiveness. An optimized code lets Thelab load fast under any traffic conditions.</value>
   </data>
-  <data name="GooglePageSpeed" xml:space="preserve">
-    <value>Google PageSpeed</value>
-  </data>
-  <data name="PerformanceGrade" xml:space="preserve">
+  <data name="e" xml:space="preserve">
     <value>Performance Grade</value>
   </data>
-  <data name="PageSpeedScore" xml:space="preserve">
-    <value>PageSpeed Score</value>
+  <data name="f" xml:space="preserve">
+    <value>Score</value>
   </data>
-  <data name="GTmetrixYSlowScore" xml:space="preserve">
-    <value>GTmetrix YSlow Score</value>
-  </data>
-  <data name="KeyFeatures" xml:space="preserve">
+  <data name="g" xml:space="preserve">
     <value>Key Features</value>
+  </data>
+  <data name="h" xml:space="preserve">
+    <value>Friendly Support</value>
+  </data>
+  <data name="i" xml:space="preserve">
+    <value>Found a bug, or have any problem, feel free to send us an email at</value>
+  </data>
+  <data name="j" xml:space="preserve">
+    <value>Search Engine Optimised</value>
+  </data>
+  <data name="k" xml:space="preserve">
+    <value>Get ranking in SERPs. Template is optimised for search engines requirements.</value>
+  </data>
+  <data name="l" xml:space="preserve">
+    <value>Custom Typography</value>
+  </data>
+  <data name="m" xml:space="preserve">
+    <value>Template allows you to adjust Typography and choose custom Colors to suit your needs.</value>
+  </data>
+  <data name="n" xml:space="preserve">
+    <value>Essential Inner pages</value>
+  </data>
+  <data name="o" xml:space="preserve">
+    <value>Limitless potential in creating the pages you need. We’ve created essential page layouts including: About, Pricing, Contact, and more.</value>
+  </data>
+  <data name="p" xml:space="preserve">
+    <value>Modern Technologies</value>
+  </data>
+  <data name="q" xml:space="preserve">
+    <value>Template is well designed and highly targeted for conversions. Built with HTML, CSS, and Javascript in a visual canvas.</value>
+  </data>
+  <data name="r" xml:space="preserve">
+    <value>High-Speed Performance</value>
+  </data>
+  <data name="s" xml:space="preserve">
+    <value>Load your site with a lightning-fast responsiveness. An optimized code lets template load fast under any traffic conditions.</value>
+  </data>
+  <data name="t" xml:space="preserve">
+    <value>Lifetime Updates</value>
+  </data>
+  <data name="u" xml:space="preserve">
+    <value>Stay up-to-date with the latest version of our template without having to do it manually.</value>
+  </data>
+  <data name="v" xml:space="preserve">
+    <value>Highly Customisable</value>
+  </data>
+  <data name="w" xml:space="preserve">
+    <value>Make your website look the way you want it to by customising it with our built-in tools and settings - with no coding skills required!</value>
+  </data>
+  <data name="x" xml:space="preserve">
+    <value>Inner Pages</value>
+  </data>
+  <data name="y" xml:space="preserve">
+    <value>Limitless potential in creating the pages you need. We’ve created essential page layouts including: About Us, Services, Works, and more.</value>
+  </data>
+  <data name="z" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="za" xml:space="preserve">
+    <value>Our Team</value>
+  </data>
+  <data name="zb" xml:space="preserve">
+    <value>Our Services</value>
+  </data>
+  <data name="zc" xml:space="preserve">
+    <value>Service Details</value>
+  </data>
+  <data name="zd" xml:space="preserve">
+    <value>Our Works</value>
+  </data>
+  <data name="ze" xml:space="preserve">
+    <value>Work Details</value>
+  </data>
+  <data name="zf" xml:space="preserve">
+    <value>Testimonials</value>
+  </data>
+  <data name="zg" xml:space="preserve">
+    <value>Pricing</value>
+  </data>
+  <data name="zh" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="zi" xml:space="preserve">
+    <value>Blog Details</value>
+  </data>
+  <data name="zj" xml:space="preserve">
+    <value>Balance of External and Internal Beauty</value>
+  </data>
+  <data name="zk" xml:space="preserve">
+    <value>Start building your next gorgeous website now.</value>
+  </data>
+  <data name="zl" xml:space="preserve">
+    <value>Purchase</value>
   </data>
 </root>
