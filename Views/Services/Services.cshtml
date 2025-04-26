@@ -1,4 +1,6 @@
-﻿<!-- Начало Search Desktop -->
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<!-- Начало Search Desktop -->
 @Html.Partial("SearchDesktop")
 <!-- Конец Search Desktop -->
 <section class="banner-home-2">
@@ -26,17 +28,17 @@
 			<div class="w-layout-vflex about-title">
 				<div class="w-layout-vflex vertical-20">
 					<div class="position-relative">
-						<h1 class="text-white">Creating Stories That Inspire</h1>
+						<h1 class="text-white">@Localizer["a"]</h1>
 					</div>
 					<div class="banner-2-description">
 						<div class="paragraph-large text-white">
-							Discover the art of storytelling through our diverse video production services. From concept to completion, we create captivating visuals that bring your vision to life.
+							@Localizer["b"]
 						</div>
 					</div>
 				</div>
 			</div>
 			<a href="#scroll" class="scroll-link w-inline-block">
-				<div>Scroll for more</div>
+				<div>@Localizer["c"]</div>
 				<div class="dot"></div>
 			</a>
 		</div>
@@ -67,13 +69,13 @@
 						<div class="w-layout-vflex bottom-service">
 							<div class="w-layout-vflex vertical-8">
 								<div class="clip">
-									<div class="clip-text-wrapper"><a href="/services/cinematic-storytelling" class="works-title">Cinematic Storytelling</a></div>
-									<div class="clip-text-wrapper bottom"><a href="/services/cinematic-storytelling" class="works-title">Cinematic Storytelling</a></div>
+									<div class="clip-text-wrapper"><a href="/services/cinematic-storytelling" class="works-title">@Localizer["d"]</a></div>
+									<div class="clip-text-wrapper bottom"><a href="/services/cinematic-storytelling" class="works-title">@Localizer["d"]</a></div>
 								</div>
-								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">Transforming ideas into visually stunning narratives.</div></div>
+								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">@Localizer["e"]</div></div>
 							</div>
 							<a href="/services/cinematic-storytelling" class="link-with-line w-inline-block">
-								<div>View details</div>
+								<div>@Localizer["View"]</div>
 								<img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
 								<div class="hover-line"><div class="hover-line-fill"></div></div>
 							</a>
@@ -96,13 +98,13 @@
 						<div class="w-layout-vflex bottom-service">
 							<div class="w-layout-vflex vertical-8">
 								<div class="clip">
-									<div class="clip-text-wrapper"><a href="/services/creative-editing" class="works-title">Creative Editing</a></div>
-									<div class="clip-text-wrapper bottom"><a href="/services/creative-editing" class="works-title">Creative Editing</a></div>
+									<div class="clip-text-wrapper"><a href="/services/creative-editing" class="works-title">@Localizer["f"]</a></div>
+									<div class="clip-text-wrapper bottom"><a href="/services/creative-editing" class="works-title">@Localizer["f"]</a></div>
 								</div>
-								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">Polished videos that captivate and engage your audience.</div></div>
+								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">@Localizer["g"]</div></div>
 							</div>
 							<a href="/services/creative-editing" class="link-with-line w-inline-block">
-								<div>View details</div>
+								<div>@Localizer["View"]</div>
 								<img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
 								<div class="hover-line"><div class="hover-line-fill"></div></div>
 							</a>
@@ -125,13 +127,13 @@
 						<div class="w-layout-vflex bottom-service">
 							<div class="w-layout-vflex vertical-8">
 								<div class="clip">
-									<div class="clip-text-wrapper"><a href="/services/visual-effects" class="works-title">Visual Effects</a></div>
-									<div class="clip-text-wrapper bottom"><a href="/services/visual-effects" class="works-title">Visual Effects</a></div>
+									<div class="clip-text-wrapper"><a href="/services/visual-effects" class="works-title">@Localizer["h"]</a></div>
+									<div class="clip-text-wrapper bottom"><a href="/services/visual-effects" class="works-title">@Localizer["h"]</a></div>
 								</div>
-								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">Adding magic with seamless and immersive digital artistry.</div></div>
+								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">@Localizer["i"]</div></div>
 							</div>
 							<a href="/services/visual-effects" class="link-with-line w-inline-block">
-								<div>View details</div>
+								<div>@Localizer["View"]</div>
 								<img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
 								<div class="hover-line"><div class="hover-line-fill"></div></div>
 							</a>
@@ -154,13 +156,13 @@
 						<div class="w-layout-vflex bottom-service">
 							<div class="w-layout-vflex vertical-8">
 								<div class="clip">
-									<div class="clip-text-wrapper"><a href="/services/sound-design" class="works-title">Sound Design</a></div>
-									<div class="clip-text-wrapper bottom"><a href="/services/sound-design" class="works-title">Sound Design</a></div>
+									<div class="clip-text-wrapper"><a href="/services/sound-design" class="works-title">@Localizer["j"]</a></div>
+									<div class="clip-text-wrapper bottom"><a href="/services/sound-design" class="works-title">@Localizer["j"]</a></div>
 								</div>
-								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">Enhancing stories with professional audio and perfect soundscapes.</div></div>
+								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">@Localizer["k"]</div></div>
 							</div>
 							<a href="/services/sound-design" class="link-with-line w-inline-block">
-								<div>View details</div>
+								<div>@Localizer["View"]</div>
 								<img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
 								<div class="hover-line"><div class="hover-line-fill"></div></div>
 							</a>
@@ -183,13 +185,13 @@
 						<div class="w-layout-vflex bottom-service">
 							<div class="w-layout-vflex vertical-8">
 								<div class="clip">
-									<div class="clip-text-wrapper"><a href="/services/brand-films" class="works-title">Brand Films</a></div>
-									<div class="clip-text-wrapper bottom"><a href="/services/brand-films" class="works-title">Brand Films</a></div>
+									<div class="clip-text-wrapper"><a href="/services/brand-films" class="works-title">@Localizer["l"]</a></div>
+									<div class="clip-text-wrapper bottom"><a href="/services/brand-films" class="works-title">@Localizer["l"]</a></div>
 								</div>
-								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">Showcasing your brand with impactful, high-quality video content.</div></div>
+								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">@Localizer["m"]</div></div>
 							</div>
 							<a href="/services/brand-films" class="link-with-line w-inline-block">
-								<div>View details</div>
+								<div>@Localizer["View"]</div>
 								<img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
 								<div class="hover-line"><div class="hover-line-fill"></div></div>
 							</a>
@@ -212,13 +214,13 @@
 						<div class="w-layout-vflex bottom-service">
 							<div class="w-layout-vflex vertical-8">
 								<div class="clip">
-									<div class="clip-text-wrapper"><a href="/services/drone-cinematography" class="works-title">Drone Cinematography</a></div>
-									<div class="clip-text-wrapper bottom"><a href="/services/drone-cinematography" class="works-title">Drone Cinematography</a></div>
+									<div class="clip-text-wrapper"><a href="/services/drone-cinematography" class="works-title">@Localizer["n"]</a></div>
+									<div class="clip-text-wrapper bottom"><a href="/services/drone-cinematography" class="works-title">@Localizer["n"]</a></div>
 								</div>
-								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">Capturing breathtaking aerial footage for dynamic visual impact.</div></div>
+								<div class="w-layout-hflex date-work-wrapp dark"><div class="service-description">@Localizer["o"]</div></div>
 							</div>
 							<a href="/services/drone-cinematography" class="link-with-line w-inline-block">
-								<div>View details</div>
+								<div>@Localizer["View"]</div>
 								<img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
 								<div class="hover-line"><div class="hover-line-fill"></div></div>
 							</a>
