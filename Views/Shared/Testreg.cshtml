@@ -49,6 +49,7 @@
         .register-container button {
             width: 100%;
             margin-top: 15px;
+            margin-bottom: 20px;
             padding: 10px;
             background: #fff;
             color: #000;
@@ -98,7 +99,7 @@
             <div id="custom-error-container" class="text-danger"></div>
         </form>
 
-        <a href="#">Login</a>
+        <p>Already have an account?<br><a href="#">Sign In</a></p>
     </section>
 </div>
 
@@ -131,7 +132,6 @@
                 errorContainer.innerHTML = errors.map(e => `<p>${e}</p>`).join("");
             } else {
                 alert("Registration successful!");
-                // form.submit(); // егер серверге жібергің келсе
             }
         });
     });

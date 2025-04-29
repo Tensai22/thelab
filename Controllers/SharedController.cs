@@ -10,5 +10,9 @@ namespace TheLab.Controllers
             return View();
         }
 
+        public IActionResult Testlogin()
+        {
+            return View();
+        }
     }
 }
