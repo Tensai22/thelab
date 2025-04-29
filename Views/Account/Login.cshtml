@@ -14,6 +14,19 @@
         flex-direction: column;
         min-height: 100vh;
     }
+
+    .remember-me-container {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        color: black;
+    }
+
+        .remember-me-container input,
+        .remember-me-container label {
+            margin: 0;
+        }
+
     .main-container {
         flex-grow: 1;
         display: flex;
@@ -25,7 +38,7 @@
         max-width: 350px;
         width: 100%;
         padding: 20px;
-        background: #fff; 
+        background: #fff;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
         text-align: center;
@@ -33,7 +46,7 @@
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
-        color: white; 
+        color: white;
     }
 
         .login-container input {
@@ -44,12 +57,12 @@
             border-radius: 5px;
             text-align: center;
             background: #000;
-            color: white; 
+            color: white;
             box-sizing: border-box;
         }
 
             .login-container input::placeholder {
-                color: white ; 
+                color: white;
             }
 
 
@@ -90,44 +103,34 @@
     <section class="login-container">
         <h2>Login</h2>
 
-        <form asp-controller="Account" asp-action="Login" method="post">
-            <input asp-for="Username" placeholder="Username" required />
-            <span asp-validation-for="Username" class="text-danger"></span>
+        <form asp-controller="Account" asp-action="Login" method="post" id="loginForm">
+            <div class="form-group">
+                <input asp-for="Username" class="form-control" placeholder="Username" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
 
-            <input asp-for="Password" type="password" placeholder="Password" required />
-            <span asp-validation-for="Password" class="text-danger"></span>
+            <div class="form-group">
+                <input asp-for="Password" type="password" class="form-control" placeholder="Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
 
-            <button type="submit">Login</button>
+            <div class="remember-me-container">
+                <input asp-for="RememberMe" class="form-check-input" />
+                <label asp-for="RememberMe" class="form-check-label">Remember me</label>
+            </div>
 
+            <button type="submit" class="btn btn-primary">Login</button>
+
+            <!-- Добавлено для отображения общих ошибок -->
             <div asp-validation-summary="All" class="text-danger"></div>
         </form>
 
-        <p class="toggle">Don't have an account? <a href="#">Sign Up</a></p>
+        <p class="toggle">Don't have an account? <a asp-action="Register">Sign Up</a></p>
     </section>
 </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form");
-        const usernameInput = document.querySelector("input[name='Username']");
-        const passwordInput = document.querySelector("input[name='Password']");
-        const errorContainer = document.querySelector(".text-danger");
-
-        form.addEventListener("submit", function (event) {
-            let errors = [];
-
-            if (usernameInput.value.trim().length < 4) {
-                errors.push("Username must be at least 4 characters long.");
-            }
-
-            if (passwordInput.value.trim().length < 8) {
-                errors.push("Password must be at least 8 characters long.");
-            }
-
-            if (errors.length > 0) {
-                event.preventDefault(); 
-                errorContainer.innerHTML = errors.map(err => `<p>${err}</p>`).join("");
-            }
-        });
-    });
-</script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

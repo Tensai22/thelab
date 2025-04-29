@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLab", "TheLab.csproj", "{A81A6965-BE77-4D51-95FE-0E1994D26E5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLab", "TheLab.csproj", "{A81A6965-BE77-4D51-95FE-0E1994D26E5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLab.Api", "..\TheLab.Api\TheLab.Api.csproj", "{840CFA49-AF27-4EA2-890B-224166BEE01D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A81A6965-BE77-4D51-95FE-0E1994D26E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A81A6965-BE77-4D51-95FE-0E1994D26E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A81A6965-BE77-4D51-95FE-0E1994D26E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{840CFA49-AF27-4EA2-890B-224166BEE01D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840CFA49-AF27-4EA2-890B-224166BEE01D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840CFA49-AF27-4EA2-890B-224166BEE01D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840CFA49-AF27-4EA2-890B-224166BEE01D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

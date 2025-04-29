@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Localization; // Добавить для работы с локализацией
+using Microsoft.Extensions.Localization; 
 using System.Diagnostics;
-using System.Globalization; // Для работы с CultureInfo
+using System.Globalization; 
+using TheLab.Filters;
 using TheLab.Models;
 
 namespace TheLab.Controllers
@@ -11,13 +12,12 @@ namespace TheLab.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IStringLocalizer<HomeController> _localizer; // Зависимость для локализации
+        private readonly IStringLocalizer<HomeController> _localizer;
 
-        // Конструктор для внедрения зависимостей
         public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> localizer)
         {
             _logger = logger;
-            _localizer = localizer; // Инициализация локализатора
+            _localizer = localizer;
         }
 
         [Authorize]
@@ -70,13 +70,11 @@ namespace TheLab.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        
+        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        //public IActionResult Error()
+        //{
+        //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        //}
 
         [HttpPost]
         public JsonResult ChangeCulture(string culture)
@@ -89,6 +87,19 @@ namespace TheLab.Controllers
                 );
 
             return Json(culture);
+        }
+
+        [TypeFilter(typeof(CustomAuthorizationFilter), Arguments = new object[] { "admin" })]
+        [HttpGet("/secure-admin")]
+
+        public IActionResult AdminOnly()
+        {
+            return Ok("Добро пожаловать, админ!");
+        }
+
+        public IActionResult Error(string message)
+        {
+            return View(message);
         }
     }
 }

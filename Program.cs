@@ -1,96 +1,71 @@
-using Microsoft.AspNetCore.Cors.Infrastructure;
-using Serilog;
-using Serilog.Context;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Mvc.Razor;
-using Microsoft.AspNetCore.Localization; // Добавьте этот using
-using System.Globalization; // Добавьте этот using
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using TheLab.Models;
+using Microsoft.EntityFrameworkCore;
+using Serilog;
+using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//// Добавляем поддержку локализации
-//builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-//builder.Services.AddRazorPages()
-//    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-//    .AddDataAnnotationsLocalization();
+// Настройка базы данных
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
-#region Login
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
-    {
-        options.LoginPath = "/Account/Login";
-        options.AccessDeniedPath = "/Account/AccessDenied";
-    });
-#endregion
-
-builder.Services.AddAuthorization();
-
-#region Logger
+// Настройка логгера (упрощенная версия)
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
-    .WriteTo.File("Logs/thelab.txt", rollingInterval: RollingInterval.Day)
-    .WriteTo.Seq("http://localhost:5341/")
-    .MinimumLevel.Information()
-    .Enrich.FromLogContext()
     .CreateLogger();
-
 builder.Host.UseSerilog();
-#endregion
 
-//// Настройка локализации
-//var supportedCultures = new[] { "en", "ru", "kk" };
-//var localizationOptions = new RequestLocalizationOptions()
-//    .SetDefaultCulture("en")
-//    .AddSupportedCultures(supportedCultures)
-//    .AddSupportedUICultures(supportedCultures);
-
-//// Добавляем провайдер куки для хранения выбранного языка
-//localizationOptions.RequestCultureProviders.Insert(0, new CookieRequestCultureProvider()
-//{
-//    CookieName = "lang",
-//    Options = localizationOptions
-//});
-
-//builder.Services.AddSingleton(localizationOptions);
-
-builder.Services.AddControllersWithViews()
-    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
-builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-
-builder.Services.Configure<RequestLocalizationOptions>(options =>
+// Настройка аутентификации
+builder.Services.AddAuthentication(options =>
 {
-    var supportedCultures = new[] {
-
-        new CultureInfo("en"),
-        new CultureInfo("ru"),
-        new CultureInfo("kk")
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+})
+.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+{
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+    options.ExpireTimeSpan = TimeSpan.FromDays(30);
+})
+.AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(
+            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     };
-    options.DefaultRequestCulture = new RequestCulture("kk");
-
-    options.SupportedUICultures = supportedCultures;
-
 });
+
+// Настройка авторизации
+builder.Services.AddAuthorization(options =>
+{
+    options.DefaultPolicy = new AuthorizationPolicyBuilder()
+        .RequireAuthenticatedUser()
+        .Build();
+});
+
+// Регистрация сервисов
+builder.Services.AddScoped<TokenService>();
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-
-
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-}
-
+// Middleware pipeline
 app.UseStaticFiles();
-
 app.UseRouting();
-
-app.UseRequestLocalization();
-// Локализация должна быть после UseRouting()
-
-// Аутентификация и авторизация должны быть после UseRouting()
 app.UseAuthentication();
 app.UseAuthorization();
-
 
 app.MapControllerRoute(
     name: "default",
