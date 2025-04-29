@@ -28,17 +28,7 @@
 
   <ItemGroup>
     <Folder Include="Logs\" />
-    <Folder Include="Migrations\" />
     <Folder Include="Resources\Views\Shared\" />
-    <Folder Include="wwwroot\lib\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Update="wwwroot\js\auth.js">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
-﻿<!-- Начало Search Desktop -->
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<!-- Начало Search Desktop -->
 @Html.Partial("SearchDesktop")
 <!-- Конец Search Desktop -->
 <section class="banner-home-2 dark-background">
@@ -6,199 +8,198 @@
         <div class="w-layout-hflex home-2-banner-top">
             <div class="w-layout-vflex about-title large">
                 <div class="w-layout-vflex vertical-20">
-                    <div data-w-id="68d2dc07-40f8-4f4b-c30d-04f3a54fb9cb" style="opacity:0" class="position-relative"><h1 class="text-white">Our Blog</h1></div>
-                    <div data-w-id="68d2dc07-40f8-4f4b-c30d-04f3a54fb9ce" style="opacity:0" class="banner-2-description">
-                        <div class="paragraph-large gray-color">Each project reflects our dedication to excellence, creativity, and innovation.</div>
-                    </div>
+                    <div class="position-relative"><h1 class="text-white">@Localizer["Our Blog"]</h1></div>
+                    <div class="banner-2-description">
+                        <div class="paragraph-large gray-color">@Localizer["Each project"] </div>
                 </div>
             </div>
-            <a data-w-id="68d2dc07-40f8-4f4b-c30d-04f3a54fb9d1" style="opacity:0" href="#scroll" class="scroll-link-light w-inline-block">
-                <div>Scroll for more</div>
+            <a href="#scroll" class="scroll-link-light w-inline-block">
+                    <div>@Localizer["Scroll"]</div>
                 <div class="dot"></div>
             </a>
         </div>
     </div>
 </section>
+
 <div id="scroll" class="section">
     <div class="base-container w-container">
         <div class="blog-grid-wrapper">
-            <div class="collection-list-wrapper w-dyn-list">
-                <div role="list" class="blog-grid w-dyn-items">
-                    <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf5" style="opacity:0" role="listitem" class="collection-item w-dyn-item">
-                        <a data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf6" href="/blog-posts/the-power-of-minimalist-design" class="blog-link w-inline-block">
+            <div class="collection-list-wrapper">
+                <div class="blog-grid">
+                    <div class="collection-item">
+                        <a href="/blog-posts/the-power-of-minimalist-design" class="blog-link w-inline-block">
                             <img src="~/images/tim-gouw-f2jas1gt5q4-unsplash.jpg"
                                  loading="lazy"
                                  alt="Work Image"
                                  sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 32vw, 420px"
                                  srcset="
-											images/tim-gouw-f2jas1gt5q4-unsplash-p-500.jpg   500w,
-											images/tim-gouw-f2jas1gt5q4-unsplash-p-800.jpg   800w,
-											images/tim-gouw-f2jas1gt5q4-unsplash-p-1080.jpg 1080w,
-											images/tim-gouw-f2jas1gt5q4-unsplash-p-1600.jpg 1600w,
-											images/tim-gouw-f2jas1gt5q4-unsplash.jpg        1920w
-                                        "
+                                    ~/images/tim-gouw-f2jas1gt5q4-unsplash-p-500.jpg 500w,
+                                    ~/images/tim-gouw-f2jas1gt5q4-unsplash-p-800.jpg 800w,
+                                    ~/images/tim-gouw-f2jas1gt5q4-unsplash-p-1080.jpg 1080w,
+                                    ~/images/tim-gouw-f2jas1gt5q4-unsplash-p-1600.jpg 1600w,
+                                    ~/images/tim-gouw-f2jas1gt5q4-unsplash.jpg 1920w"
                                  class="cover-image" />
                         </a>
                         <div class="w-layout-vflex bottom-service">
                             <div class="w-layout-vflex vertical-8">
-                                <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bfa" class="clip">
-                                    <div class="clip-text-wrapper"><a href="/blog-posts/the-power-of-minimalist-design" class="works-title">The Power of Minimalist Design</a></div>
-                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/the-power-of-minimalist-design" class="works-title">The Power of Minimalist Design</a></div>
+                                <div class="clip">
+                                    <div class="clip-text-wrapper"><a href="/blog-posts/the-power-of-minimalist-design" class="works-title">@Localizer["The Power"]</a></div>
+                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/the-power-of-minimalist-design" class="works-title">@Localizer["The Power"]</a></div>
                                 </div>
-                                <div class="w-layout-hflex"><div class="gray-color">Discover how minimalist design can amplify your message and create a timeless aesthetic for your projects.</div></div>
+                                <div class="w-layout-hflex"><div class="gray-color">@Localizer["Discover"]</div></div>
                             </div>
                             <a href="/blog-posts/the-power-of-minimalist-design" class="link-with-line w-inline-block">
-                                <div>Read post</div>
+                                <div>@Localizer["Read post"]</div>
                                 <img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
                                 <div class="hover-line"><div class="hover-line-fill"></div></div>
                             </a>
                         </div>
                     </div>
-                    <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf5" style="opacity:0" role="listitem" class="collection-item w-dyn-item">
-                        <a data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf6" href="/blog-posts/secrets-to-capturing-cinematic-shots" class="blog-link w-inline-block">
+
+                    <div class="collection-item">
+                        <a href="/blog-posts/secrets-to-capturing-cinematic-shots" class="blog-link w-inline-block">
                             <img src="~/images/david-kirchner-heskx6hbjtg-unsplash.jpg"
                                  loading="lazy"
                                  alt="Work Image"
                                  sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 32vw, 420px"
                                  srcset="
-											images/david-kirchner-heskx6hbjtg-unsplash-p-500.jpg   500w,
-											images/david-kirchner-heskx6hbjtg-unsplash-p-800.jpg   800w,
-											images/david-kirchner-heskx6hbjtg-unsplash-p-1080.jpg 1080w,
-											images/david-kirchner-heskx6hbjtg-unsplash-p-1600.jpg 1600w,
-											images/david-kirchner-heskx6hbjtg-unsplash.jpg        1920w
-                                        "
+                                    ~/images/david-kirchner-heskx6hbjtg-unsplash-p-500.jpg 500w,
+                                    ~/images/david-kirchner-heskx6hbjtg-unsplash-p-800.jpg 800w,
+                                    ~/images/david-kirchner-heskx6hbjtg-unsplash-p-1080.jpg 1080w,
+                                    ~/images/david-kirchner-heskx6hbjtg-unsplash-p-1600.jpg 1600w,
+                                    ~/images/david-kirchner-heskx6hbjtg-unsplash.jpg 1920w"
                                  class="cover-image" />
                         </a>
                         <div class="w-layout-vflex bottom-service">
                             <div class="w-layout-vflex vertical-8">
-                                <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bfa" class="clip">
-                                    <div class="clip-text-wrapper"><a href="/blog-posts/secrets-to-capturing-cinematic-shots" class="works-title">Secrets to Capturing Cinematic Shots</a></div>
-                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/secrets-to-capturing-cinematic-shots" class="works-title">Secrets to Capturing Cinematic Shots</a></div>
+                                <div class="clip">
+                                    <div class="clip-text-wrapper"><a href="/blog-posts/secrets-to-capturing-cinematic-shots" class="works-title">@Localizer["Secrets"]</a></div>
+                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/secrets-to-capturing-cinematic-shots" class="works-title">@Localizer["Secrets"]</a></div>
                                 </div>
-                                <div class="w-layout-hflex"><div class="gray-color">Whether you&#x27;re shooting landscapes or portraits, mastering cinematic shots is essential.</div></div>
+                                <div class="w-layout-hflex"><div class="gray-color">@Localizer["Whether"]</div></div>
                             </div>
                             <a href="/blog-posts/secrets-to-capturing-cinematic-shots" class="link-with-line w-inline-block">
-                                <div>Read post</div>
+                                <div>@Localizer["Read post"]</div>
                                 <img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
                                 <div class="hover-line"><div class="hover-line-fill"></div></div>
                             </a>
                         </div>
                     </div>
-                    <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf5" style="opacity:0" role="listitem" class="collection-item w-dyn-item">
-                        <a data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf6" href="/blog-posts/the-intersection-of-art-and-technology" class="blog-link w-inline-block">
+
+                    <div class="collection-item">
+                        <a href="/blog-posts/the-intersection-of-art-and-technology" class="blog-link w-inline-block">
                             <img src="~/images/davisuko-5e5n49rwtba-unsplash.jpg"
                                  loading="lazy"
                                  alt="Work Image"
                                  sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 32vw, 420px"
                                  srcset="
-											images/davisuko-5e5n49rwtba-unsplash-p-500.jpg   500w,
-											images/davisuko-5e5n49rwtba-unsplash-p-800.jpg   800w,
-											images/davisuko-5e5n49rwtba-unsplash-p-1080.jpg 1080w,
-											images/davisuko-5e5n49rwtba-unsplash-p-1600.jpg 1600w,
-											images/davisuko-5e5n49rwtba-unsplash.jpg        1920w
-                                        "
+                                    ~/images/davisuko-5e5n49rwtba-unsplash-p-500.jpg 500w,
+                                    ~/images/davisuko-5e5n49rwtba-unsplash-p-800.jpg 800w,
+                                    ~/images/davisuko-5e5n49rwtba-unsplash-p-1080.jpg 1080w,
+                                    ~/images/davisuko-5e5n49rwtba-unsplash-p-1600.jpg 1600w,
+                                    ~/images/davisuko-5e5n49rwtba-unsplash.jpg 1920w"
                                  class="cover-image" />
                         </a>
                         <div class="w-layout-vflex bottom-service">
                             <div class="w-layout-vflex vertical-8">
-                                <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bfa" class="clip">
-                                    <div class="clip-text-wrapper"><a href="/blog-posts/the-intersection-of-art-and-technology" class="works-title">The Intersection of Art and Technology</a></div>
-                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/the-intersection-of-art-and-technology" class="works-title">The Intersection of Art and Technology</a></div>
+                                <div class="clip">
+                                    <div class="clip-text-wrapper"><a href="/blog-posts/the-intersection-of-art-and-technology" class="works-title">@Localizer["The Intersection"]</a></div>
+                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/the-intersection-of-art-and-technology" class="works-title">@Localizer["The Intersection"]</a></div>
                                 </div>
-                                <div class="w-layout-hflex"><div class="gray-color">Explore how creators are blending tradition with innovation to shape the future of creative industries.</div></div>
+                                <div class="w-layout-hflex"><div class="gray-color">@Localizer["Explore"]</div></div>
                             </div>
                             <a href="/blog-posts/the-intersection-of-art-and-technology" class="link-with-line w-inline-block">
-                                <div>Read post</div>
-                                <img src="images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
-                                <div class="hover-line"><div class="hover-line-fill"></div></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf5" style="opacity:0" role="listitem" class="collection-item w-dyn-item">
-                        <a data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf6" href="/blog-posts/the-arcane-symbols-of-winter" class="blog-link w-inline-block">
-                            <img src="~/images/farrel-nobel-nsapredypru-unsplash.jpg"
-                                 loading="lazy"
-                                 alt="Work Image"
-                                 sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 32vw, 420px"
-                                 srcset="
-											images/farrel-nobel-nsapredypru-unsplash-p-500.jpg   500w,
-											images/farrel-nobel-nsapredypru-unsplash-p-800.jpg   800w,
-											images/farrel-nobel-nsapredypru-unsplash-p-1080.jpg 1080w,
-											images/farrel-nobel-nsapredypru-unsplash-p-1600.jpg 1600w,
-											images/farrel-nobel-nsapredypru-unsplash.jpg        1920w
-                                        "
-                                 class="cover-image" />
-                        </a>
-                        <div class="w-layout-vflex bottom-service">
-                            <div class="w-layout-vflex vertical-8">
-                                <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bfa" class="clip">
-                                    <div class="clip-text-wrapper"><a href="/blog-posts/the-arcane-symbols-of-winter" class="works-title">The Arcane Symbols of Winter</a></div>
-                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/the-arcane-symbols-of-winter" class="works-title">The Arcane Symbols of Winter</a></div>
-                                </div>
-                                <div class="w-layout-hflex"><div class="gray-color">But the team has been super welcoming and I couldn’t be happier with my decision to join.</div></div>
-                            </div>
-                            <a href="/blog-posts/the-arcane-symbols-of-winter" class="link-with-line w-inline-block">
-                                <div>Read post</div>
-                                <img src="images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
-                                <div class="hover-line"><div class="hover-line-fill"></div></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf5" style="opacity:0" role="listitem" class="collection-item w-dyn-item">
-                        <a data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf6" href="/blog-posts/crafting-cinematic-magic-in-snowy-landscapes" class="blog-link w-inline-block">
-                            <img src="~/images/samsommer-vddcctqwal8-unsplash.jpg"
-                                 loading="lazy"
-                                 alt="Work Image"
-                                 sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 32vw, 420px"
-                                 srcset="
-											images/samsommer-vddcctqwal8-unsplash-p-500.jpg   500w,
-											images/samsommer-vddcctqwal8-unsplash-p-800.jpg   800w,
-											images/samsommer-vddcctqwal8-unsplash-p-1080.jpg 1080w,
-											images/samsommer-vddcctqwal8-unsplash-p-1600.jpg 1600w,
-											images/samsommer-vddcctqwal8-unsplash.jpg        1920w
-                                        "
-                                 class="cover-image" />
-                        </a>
-                        <div class="w-layout-vflex bottom-service">
-                            <div class="w-layout-vflex vertical-8">
-                                <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bfa" class="clip">
-                                    <div class="clip-text-wrapper"><a href="/blog-posts/crafting-cinematic-magic-in-snowy-landscapes" class="works-title">Crafting Cinematic Magic in Snowy Landscapes</a></div>
-                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/crafting-cinematic-magic-in-snowy-landscapes" class="works-title">Crafting Cinematic Magic in Snowy Landscapes</a></div>
-                                </div>
-                                <div class="w-layout-hflex"><div class="gray-color">The experience of being the first designer at Ueno LA comes with a ton of excitement.</div></div>
-                            </div>
-                            <a href="/blog-posts/crafting-cinematic-magic-in-snowy-landscapes" class="link-with-line w-inline-block">
-                                <div>Read post</div>
+                                <div>@Localizer["Read post"]</div>
                                 <img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
                                 <div class="hover-line"><div class="hover-line-fill"></div></div>
                             </a>
                         </div>
                     </div>
-                    <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf5" style="opacity:0" role="listitem" class="collection-item w-dyn-item">
-                        <a data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bf6" href="/blog-posts/how-to-create-impactful-brand-films" class="blog-link w-inline-block">
+
+                    <div class="collection-item">
+                        <a href="/blog-posts/the-arcane-symbols-of-winter" class="blog-link w-inline-block">
+                            <img src="~/images/farrel-nobel-nsapredypru-unsplash.jpg"
+                                 loading="lazy"
+                                 alt="Work Image"
+                                 sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 32vw, 420px"
+                                 srcset="
+                                    ~/images/farrel-nobel-nsapredypru-unsplash-p-500.jpg 500w,
+                                    ~/images/farrel-nobel-nsapredypru-unsplash-p-800.jpg 800w,
+                                    ~/images/farrel-nobel-nsapredypru-unsplash-p-1080.jpg 1080w,
+                                    ~/images/farrel-nobel-nsapredypru-unsplash-p-1600.jpg 1600w,
+                                    ~/images/farrel-nobel-nsapredypru-unsplash.jpg 1920w"
+                                 class="cover-image" />
+                        </a>
+                        <div class="w-layout-vflex bottom-service">
+                            <div class="w-layout-vflex vertical-8">
+                                <div class="clip">
+                                    <div class="clip-text-wrapper"><a href="/blog-posts/the-arcane-symbols-of-winter" class="works-title">@Localizer["The Arcane"]</a></div>
+                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/the-arcane-symbols-of-winter" class="works-title">@Localizer["The Arcane"]</a></div>
+                                </div>
+                                <div class="w-layout-hflex"><div class="gray-color">@Localizer["But the"]</div></div>
+                            </div>
+                            <a href="/blog-posts/the-arcane-symbols-of-winter" class="link-with-line w-inline-block">
+                                <div>@Localizer["Read post"]</div>
+                                <img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
+                                <div class="hover-line"><div class="hover-line-fill"></div></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="collection-item">
+                        <a href="/blog-posts/crafting-cinematic-magic-in-snowy-landscapes" class="blog-link w-inline-block">
+                            <img src="~/images/samsommer-vddcctqwal8-unsplash.jpg"
+                                 loading="lazy"
+                                 alt="Work Image"
+                                 sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 32vw, 420px"
+                                 srcset="
+                                    ~/images/samsommer-vddcctqwal8-unsplash-p-500.jpg 500w,
+                                    ~/images/samsommer-vddcctqwal8-unsplash-p-800.jpg 800w,
+                                    ~/images/samsommer-vddcctqwal8-unsplash-p-1080.jpg 1080w,
+                                    ~/images/samsommer-vddcctqwal8-unsplash-p-1600.jpg 1600w,
+                                    ~/images/samsommer-vddcctqwal8-unsplash.jpg 1920w"
+                                 class="cover-image" />
+                        </a>
+                        <div class="w-layout-vflex bottom-service">
+                            <div class="w-layout-vflex vertical-8">
+                                <div class="clip">
+                                    <div class="clip-text-wrapper"><a href="/blog-posts/crafting-cinematic-magic-in-snowy-landscapes" class="works-title">@Localizer["Crafting"]</a></div>
+                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/crafting-cinematic-magic-in-snowy-landscapes" class="works-title">@Localizer["Crafting"]</a></div>
+                                </div>
+                                <div class="w-layout-hflex"><div class="gray-color">@Localizer["Crafting"]</div></div>
+                            </div>
+                            <a href="/blog-posts/crafting-cinematic-magic-in-snowy-landscapes" class="link-with-line w-inline-block">
+                                <div>@Localizer["Read post"]</div>
+                                <img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
+                                <div class="hover-line"><div class="hover-line-fill"></div></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="collection-item">
+                        <a href="/blog-posts/how-to-create-impactful-brand-films" class="blog-link w-inline-block">
                             <img src="~/images/pexels-ruben-urrutia-2193317-10176614.jpg"
                                  loading="lazy"
                                  alt="Work Image"
                                  sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 32vw, 420px"
                                  srcset="
-											images/pexels-ruben-urrutia-2193317-10176614-p-500.jpg   500w,
-											images/pexels-ruben-urrutia-2193317-10176614-p-800.jpg   800w,
-											images/pexels-ruben-urrutia-2193317-10176614-p-1080.jpg 1080w,
-											images/pexels-ruben-urrutia-2193317-10176614-p-1600.jpg 1600w,
-											images/pexels-ruben-urrutia-2193317-10176614.jpg        1920w
-                                        "
+                                    ~/images/pexels-ruben-urrutia-2193317-10176614-p-500.jpg 500w,
+                                    ~/images/pexels-ruben-urrutia-2193317-10176614-p-800.jpg 800w,
+                                    ~/images/pexels-ruben-urrutia-2193317-10176614-p-1080.jpg 1080w,
+                                    ~/images/pexels-ruben-urrutia-2193317-10176614-p-1600.jpg 1600w,
+                                    ~/images/pexels-ruben-urrutia-2193317-10176614.jpg 1920w"
                                  class="cover-image" />
                         </a>
                         <div class="w-layout-vflex bottom-service">
                             <div class="w-layout-vflex vertical-8">
-                                <div data-w-id="e4d0760a-8df6-60ad-9c27-93a1db4d9bfa" class="clip">
-                                    <div class="clip-text-wrapper"><a href="/blog-posts/how-to-create-impactful-brand-films" class="works-title">How to Create Impactful Brand Films</a></div>
-                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/how-to-create-impactful-brand-films" class="works-title">How to Create Impactful Brand Films</a></div>
+                                <div class="clip">
+                                    <div class="clip-text-wrapper"><a href="/blog-posts/how-to-create-impactful-brand-films" class="works-title">@Localizer["How to"]</a></div>
+                                    <div class="clip-text-wrapper bottom"><a href="/blog-posts/how-to-create-impactful-brand-films" class="works-title">@Localizer["How to"]</a></div>
                                 </div>
-                                <div class="w-layout-hflex"><div class="gray-color">You might have heard about our office in LA (or not, which is okay too, but not really, so read about it).</div></div>
+                                <div class="w-layout-hflex"><div class="gray-color">@Localizer["You might"]</div></div>
                             </div>
                             <a href="/blog-posts/how-to-create-impactful-brand-films" class="link-with-line w-inline-block">
-                                <div>Read post</div>
+                                <div>@Localizer["Read post"]</div>
                                 <img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="link-icon" />
                                 <div class="hover-line"><div class="hover-line-fill"></div></div>
                             </a>
@@ -209,4 +210,3 @@
         </div>
     </div>
 </div>
-

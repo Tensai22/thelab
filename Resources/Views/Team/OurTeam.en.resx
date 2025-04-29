@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Amélie Laurent" xml:space="preserve">
+    <value>Amélie Laurent</value>
+  </data>
+  <data name="A visionary " xml:space="preserve">
+    <value>A visionary in the world of video production with a deep passion for storytelling and creative excellence.
+    </value>
+  </data>
+  <data name="At The" xml:space="preserve">
+    <value>At The Lab, we believe that every frame tells a story. Our mission is to turn ideas into unforgettable experiences, where creativity and technology unite to inspire and engage.
+     </value>
+  </data>
+  <data name="CEO " xml:space="preserve">
+    <value>CEO of TheLab</value>
+  </data>
+  <data name="Eric Labbonski" xml:space="preserve">
+    <value>Eric Labbonski</value>
+  </data>
+  <data name="Labbonski" xml:space="preserve">
+    <value>The Lab was founded by Eric Labbonski.</value>
+  </data>
+  <data name="Meet" xml:space="preserve">
+    <value>Meet the creative visionaries who make it all happen at TheLab. Our team work together to push boundaries and deliver exceptional results.&lt;/div&gt;
+     </value>
+  </data>
+  <data name="Meet the " xml:space="preserve">
+    <value>Meet the people behind the camera</value>
+  </data>
+  <data name="Scroll" xml:space="preserve">
+    <value>Scroll for more</value>
+  </data>
+  <data name="the team" xml:space="preserve">
+    <value>the team</value>
+  </data>
+  <data name="TheMinds" xml:space="preserve">
+    <value>The Minds Behind the Magic</value>
+  </data>
+  <data name="Watch " xml:space="preserve">
+    <value>Watch reel</value>
+  </data>
+  <data name="Creative Director" xml:space="preserve">
+    <value>Creative Director</value>
+  </data>
+  <data name="Visionary " xml:space="preserve">
+    <value>Visionary leader turning ideas into powerful stories</value>
+  </data>
+  <data name="Nikolas Gibbons" xml:space="preserve">
+    <value>Nikolas Gibbons</value>
+  </data>
+  <data name="Producer" xml:space="preserve">
+    <value>Producer</value>
+  </data>
+  <data name="Organizes " xml:space="preserve">
+    <value>Organizes and manages projects from start to finish</value>
+  </data>
+  <data name="Sienna Hewitt" xml:space="preserve">
+    <value>Sienna Hewitt</value>
+  </data>
+  <data name="Photography" xml:space="preserve">
+    <value>Director of Photography</value>
+  </data>
+  <data name="Captures" xml:space="preserve">
+    <value>Captures stunning visuals with precision.</value>
+  </data>
+  <data name="Lily" xml:space="preserve">
+    <value>Lily-Rose Chedjou</value>
+  </data>
+  <data name="Editor" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="Transforms" xml:space="preserve">
+    <value>Transforms raw footage into engaging content.</value>
+  </data>
+  <data name="Zahra " xml:space="preserve">
+    <value>Zahra Christensen</value>
+  </data>
+  <data name="Mot" xml:space="preserve">
+    <value>Motion Graphics Designer</value>
+  </data>
+  <data name="Creates" xml:space="preserve">
+    <value>Creates dynamic graphics to elevate projects</value>
+  </data>
+  <data name="Caitlyn " xml:space="preserve">
+    <value>Caitlyn King</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project Manager</value>
+  </data>
+  <data name="Ensures" xml:space="preserve">
+    <value>Ensures smooth coordination and timely delivery.</value>
+  </data>
+  <data name="Zaid Schwartz" xml:space="preserve">
+    <value>Zaid Schwartz</value>
+  </data>
+  <data name="Supports logistics " xml:space="preserve">
+    <value>Supports logistics and contributes fresh ideas.</value>
+  </data>
+  <data name="Marco Kelly" xml:space="preserve">
+    <value>Marco Kelly</value>
+  </data>
+  <data name="Customer Success" xml:space="preserve">
+    <value>Customer Success</value>
+  </data>
+  <data name="Reviews" xml:space="preserve">
+    <value>Reviews</value>
+  </data>
+  <data name="Our clients" xml:space="preserve">
+    <value>Our clients’ satisfaction is our top priority.</value>
+  </data>
+  <data name="We’re" xml:space="preserve">
+    <value>We’re proud of the relationships we’ve built and the impact our videos have made.</value>
+  </data>
+  <data name="The lab" xml:space="preserve">
+    <value>"The Lab took our vision and turned it into a reality. The team was incredibly professional, creative, and attentive to every detail. The final product exceeded our expectations, and it’s made a huge impact on our brand."&lt;/h5&gt;
+      </value>
+  </data>
+  <data name="Daniel" xml:space="preserve">
+    <value>Daniel, CEO AZS Agency</value>
+  </data>
+</root>
