@@ -21,7 +21,6 @@ namespace TheLab.Middlewares
 
         public async Task InvokeAsync(HttpContext context)
         {
-            // Пропускаем все запросы, которые НЕ начинаются с /api
             if (!context.Request.Path.StartsWithSegments("/api"))
             {
                 await _next(context);
@@ -43,7 +42,6 @@ namespace TheLab.Middlewares
         {
             context.Response.ContentType = "application/json";
 
-            // Настройка статус-кода для разных исключений
             context.Response.StatusCode = ex switch
             {
                 FileNotFoundException => (int)HttpStatusCode.NotFound,
@@ -55,8 +53,8 @@ namespace TheLab.Middlewares
             {
                 StatusCode = context.Response.StatusCode,
                 Message = "Произошла ошибка. Попробуйте позже.",
-                Details = _env.IsDevelopment() ? ex.Message : null, // Детали только в Development
-                TraceId = context.TraceIdentifier // Для отслеживания в логах
+                Details = _env.IsDevelopment() ? ex.Message : null, 
+                TraceId = context.TraceIdentifier
             };
 
             var jsonOptions = new JsonSerializerOptions { WriteIndented = true };

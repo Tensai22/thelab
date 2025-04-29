@@ -6,21 +6,36 @@ using TheLab.Models;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
+using System.Globalization;
+using TheLab.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Настройка базы данных
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// Настройка логгера (упрощенная версия)
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .CreateLogger();
 builder.Host.UseSerilog();
 
-// Настройка аутентификации
+#region Localization
+builder.Services.AddControllersWithViews()
+    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+var supportedCultures = new[] { new CultureInfo("en"), new CultureInfo("ru"), new CultureInfo("kk") };
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    options.DefaultRequestCulture = new RequestCulture("kk");
+    options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+});
+#endregion
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -47,7 +62,6 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// Настройка авторизации
 builder.Services.AddAuthorization(options =>
 {
     options.DefaultPolicy = new AuthorizationPolicyBuilder()
@@ -55,17 +69,18 @@ builder.Services.AddAuthorization(options =>
         .Build();
 });
 
-// Регистрация сервисов
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Middleware pipeline
+app.UseExceptionHandling();
+
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+app.MapControllers(); 
 
 app.MapControllerRoute(
     name: "default",

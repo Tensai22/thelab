@@ -17,7 +17,7 @@
         {
             var startTime = DateTime.UtcNow;
 
-            await _next(context); // передача запроса дальше
+            await _next(context);
 
             var duration = DateTime.UtcNow - startTime;
             _logger.LogInformation(
@@ -26,8 +26,6 @@
                 $"Duration: {duration.TotalMilliseconds} ms");
         }
     }
-
-    // Расширение для удобного подключения
     public static class RequestLoggingMiddlewareExtensions
     {
         public static IApplicationBuilder UseRequestLogging(this IApplicationBuilder builder)
