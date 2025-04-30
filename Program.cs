@@ -10,6 +10,9 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using TheLab.Middlewares;
+using TheLab.Filters;
+using TheLab.Services.Cache;
+using TheLab.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,10 +20,17 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+#region Logging
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .CreateLogger();
 builder.Host.UseSerilog();
+#endregion
+
+#region Cache
+builder.Services.AddScoped<CacheResultFilter>();
+builder.Services.AddSingleton<ICacheService, InMemoryCacheService>();
+#endregion
 
 #region Localization
 builder.Services.AddControllersWithViews()
@@ -36,6 +46,7 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
 });
 #endregion
 
+#region Authentication and Authorization
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -68,19 +79,33 @@ builder.Services.AddAuthorization(options =>
         .RequireAuthenticatedUser()
         .Build();
 });
+#endregion
 
 builder.Services.AddScoped<TokenService>();
-builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ReviewService>();
+builder.Services.AddHttpClient();
+
+
+#region Filters
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add<CatchError>(); 
+});
+#endregion
 
 var app = builder.Build();
 
+#region Middleware pipeline
+app.UseMiddleware<AuthenticatedRequestLoggingMiddleware>();
 app.UseExceptionHandling();
-
+app.UseRequestLogging();
 app.UseStaticFiles();
+app.UseRequestLocalization();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
-app.MapControllers(); 
+app.MapControllers();
+#endregion
 
 app.MapControllerRoute(
     name: "default",

@@ -1,8 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Diagnostics;
-using System.Collections.Generic;
-using System.Reflection.Emit;
-using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace TheLab.Models
 {
@@ -12,24 +8,19 @@ namespace TheLab.Models
             : base(options)
         {
         }
+
         public DbSet<AppUser> Users { get; set; }
+        public DbSet<Reviews> Reviews { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<AppUser>().HasData(
-                new AppUser
-                {
-                    Id = 1,
-                    Username = "admin",
-                    Email = "admin@example.com",
-                    PasswordHash = BCrypt.Net.BCrypt.HashPassword("admin123"),
-                    Role = "Admin"
-                });
-        }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.ConfigureWarnings(warnings =>
-                warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
+            modelBuilder.Entity<Reviews>()
+                .HasOne(r => r.User)  
+                .WithMany(u => u.Reviews)  
+                .HasForeignKey(r => r.UserId); 
+
+            base.OnModelCreating(modelBuilder);
         }
     }
+
 }

@@ -9,6 +9,7 @@ using TheLab.Models;
 
 namespace TheLab.Controllers
 {
+    [ServiceFilter(typeof(CacheResultFilter))]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -25,12 +26,12 @@ namespace TheLab.Controllers
         {
             return View();
         }
-
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();
         }
-
+        [Authorize]
         public IActionResult Contact()
         {
             return View();
@@ -69,13 +70,6 @@ namespace TheLab.Controllers
         {
             return View();
         }
-
-        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        //public IActionResult Error()
-        //{
-        //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        //}
-
         [HttpPost]
         public JsonResult ChangeCulture(string culture)
         {
@@ -89,17 +83,15 @@ namespace TheLab.Controllers
             return Json(culture);
         }
 
-        [TypeFilter(typeof(CustomAuthorizationFilter), Arguments = new object[] { "admin" })]
-        [HttpGet("/secure-admin")]
-
-        public IActionResult AdminOnly()
-        {
-            return Ok("Добро пожаловать, админ!");
-        }
-
         public IActionResult Error(string message)
         {
-            return View(message);
+            ViewData["ErrorMessage"] = message;  
+            return View();  
         }
+        public IActionResult TestError()
+        {
+            throw new Exception("Test exception for CatchError filter.");
+        }
+
     }
 }

@@ -1,257 +1,222 @@
-﻿@using Microsoft.AspNetCore.Mvc.Localization
+﻿@model IEnumerable<TheLab.Models.Reviews>
+@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
+
 <!-- Начало Search Desktop -->
 @Html.Partial("SearchDesktop")
 <!-- Конец Search Desktop -->
 <section class="banner-home-2 dark-background">
-	<div class="w-layout-blockcontainer base-container w-container">
-		<div class="w-layout-hflex home-2-banner-top">
-			<div class="w-layout-vflex about-title small">
-				<div class="w-layout-vflex vertical-20">
-					<div class="position-relative">
-						<h1 class="text-white">@Localizer["Voices"]</h1>
-					</div>
-					<div class="banner-2-description">
-						<div class="paragraph-large gray-color">@Localizer["Hear"]</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="lightbox-home-2">
-			<div data-poster-url="~/images/testimonials-poster-00001.jpg"
-				 data-video-urls="~/images/testimonials-transcode.mp4,~/images/testimonials-transcode.webm"
-				 data-autoplay="true"
-				 data-loop="true"
-				 data-wf-ignore="true"
-				 class="full-video-bg z1 w-background-video w-background-video-atom">
-				<video id="a723251a-d165-ec57-e326-030f736c1f10-video"
-					   autoplay
-					   loop
-					   style='background-image:url("~/images/testimonials-poster-00001.jpg")'
-					   muted
-					   playsinline
-					   data-wf-ignore="true"
-					   data-object-fit="cover">
-					<source src="~/images/testimonials-transcode.mp4" data-wf-ignore="true" />
-					<source src="~/images/testimonials-transcode.webm" data-wf-ignore="true" />
-				</video>
-			</div>
-		</div>
-	</div>
+    <div class="w-layout-blockcontainer base-container w-container">
+        <div class="w-layout-hflex home-2-banner-top">
+            <div class="w-layout-vflex about-title small">
+                <div class="w-layout-vflex vertical-20">
+                    <div class="position-relative">
+                        <h1 class="text-white">@Localizer["Voices"]</h1>
+                    </div>
+                    <div class="banner-2-description">
+                        <div class="paragraph-large gray-color">@Localizer["Hear"]</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lightbox-home-2">
+            <div data-poster-url="~/images/testimonials-poster-00001.jpg"
+                 data-video-urls="~/images/testimonials-transcode.mp4,~/images/testimonials-transcode.webm"
+                 data-autoplay="true"
+                 data-loop="true"
+                 data-wf-ignore="true"
+                 class="full-video-bg z1 w-background-video w-background-video-atom">
+                <video id="a723251a-d165-ec57-e326-030f736c1f10-video"
+                       autoplay
+                       loop
+                       style='background-image:url("~/images/testimonials-poster-00001.jpg")'
+                       muted
+                       playsinline
+                       data-wf-ignore="true"
+                       data-object-fit="cover">
+                    <source src="~/images/testimonials-transcode.mp4" data-wf-ignore="true" />
+                    <source src="~/images/testimonials-transcode.webm" data-wf-ignore="true" />
+                </video>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="section overflow-hidden">
-	<div class="w-layout-blockcontainer base-container position-relative w-container">
-		<div class="w-layout-vflex vertical-40 centered">
-			<div class="w-layout-hflex subtitle">
-				<div>@Localizer["Reviews"]</div>
-				<div class="dot"></div>
-			</div>
-			<div class="w-layout-vflex vertical-20 centered">
-				<h2 class="home-3-testimonials-title">@Localizer["Ourclients"]</h2>
-				<div class="rewiews-desription">
-					<div class="gray-color">@Localizer["We’re"]</div>
-				</div>
-			</div>
-			<div class="w-layout-grid testimonials-grid">
-				<div class="w-layout-vflex slide-intro">
-					<div class="w-layout-vflex vertical-20">
-						<div class="w-layout-hflex stars-wrapper">
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-						</div>
-						<h5>
-							@Localizer["From start"]	
-						</h5>
-					</div>
-					<div class="upper-text-600 gray-color">@Localizer["Martin"]</div>
-				</div>
-				<div class="w-layout-vflex slide-intro">
-					<div class="w-layout-vflex vertical-20">
-						<div class="w-layout-hflex stars-wrapper">
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-						</div>
-						<h5>
-							@Localizer["We’veworked"]</h5>
-					</div>
-					<div class="upper-text-600 gray-color">@Localizer["Rebecca"]</div>
-				</div>
-				<div class="w-layout-vflex slide-intro">
-					<div class="w-layout-vflex vertical-20">
-						<div class="w-layout-hflex stars-wrapper">
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-						</div>
-						<h5>
-							@Localizer["Frofinish"]
-						</h5>
-					</div>
-					<div class="upper-text-600 gray-color">@Localizer["Solutions"]</div>
-				</div>
-				<div class="w-layout-vflex slide-intro">
-					<div class="w-layout-vflex vertical-20">
-						<div class="w-layout-hflex stars-wrapper">
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-							<img src="~/images/star-201.svg" loading="lazy" alt="star" />
-						</div>
-						<h5>
-							@Localizer["took"]
-						</h5>
-					</div>
-					<div class="upper-text-600 gray-color">@Localizer["Daniel"]</div>
-				</div>
-			</div>
-		</div>
-		<div class="testimonials-adsolute"></div>
-	</div>
+    <div class="w-layout-blockcontainer base-container position-relative w-container">
+        <div class="w-layout-vflex vertical-40 centered">
+            <div class="w-layout-hflex subtitle">
+                <div>@Localizer["Reviews"]</div>
+                <div class="dot"></div>
+            </div>
+            <div class="w-layout-vflex vertical-20 centered">
+                <h2 class="home-3-testimonials-title">@Localizer["Ourclients"]</h2>
+                <div class="rewiews-desription">
+                    <div class="gray-color">@Localizer["We’re"]</div>
+                </div>
+            </div>
+            @if (Model == null || !Model.Any())
+            {
+                <p>No reviews available.</p>
+            }
+            else
+            {
+                @foreach (var review in Model)
+                {
+                    <div class="w-layout-vflex slide-intro">
+                        <div class="w-layout-vflex vertical-20">
+                            <div class="w-layout-hflex stars-wrapper">
+                                @for (int i = 0; i < 5; i++)
+                                {
+                                    <img src="~/images/star-201.svg" loading="lazy" alt="star" style="filter: @(review.Rating > i ? "grayscale(0)" : "grayscale(1)")" />
+                                }
+                            </div>
+                            <h5>@review.Message</h5>
+                        </div>
+                        <div class="upper-text-600 gray-color">
+                            @review.User?.Username  
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="testimonials-adsolute"></div>
+    </div>
 </section>
 
 <section class="section without-top-spacing">
-	<div class="w-layout-blockcontainer base-container w-container">
-		<div class="w-layout-vflex home-2-testimonials">
-			<div class="home-2-reviews-slider w-slider" data-autoplay="false" data-hide-arrows="false" data-disable-swipe="false">
-				<div class="home-2-testimonials-mask-copy w-slider-mask">
-					<div class="reviews-slide w-slide">
-						<div class="w-layout-hflex testimonials-2-intro">
-							<div class="testimonials-page-text-wrapper">
-								<div class="clip">
-									<h2 class="testimonial-text-home-2">
-										@Localizer["vision"]
-									</h2>
-								</div>
-							</div>
-							<div class="w-layout-vflex testimonials-member-wrapper">
-								<div class="clip">
-									<div class="w-layout-vflex vertical-20 mobile-flex-hor">
-										<img src="~/images/rectangle-2064-20-1-.webp" loading="lazy" width="132" alt="man" class="testimonials-image small" />
-										<div class="position-testimonials">
-											<div class="upper-text-600">Martin, <span class="gray-color">@Localizer["CEO"]</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="reviews-slide w-slide">
-						<div class="w-layout-hflex testimonials-2-intro">
-							<div class="testimonials-page-text-wrapper">
-								<div class="clip">
-									<h2 class="testimonial-text-home-2">
-										@Localizer["team understood"]
-									</h2>
-								</div>
-							</div>
-							<div class="w-layout-vflex testimonials-member-wrapper">
-								<div class="clip">
-									<div class="w-layout-vflex vertical-20 mobile-flex-hor">
-										<img src="~/images/member-photo-2.webp" loading="lazy" width="132" alt="photo" class="testimonials-image small" />
-										<div class="position-testimonials">
-											<div class="upper-text-600">Daniel, <span class="gray-color" @Localizer[">AZS"]</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="reviews-slide w-slide">
-						<div class="w-layout-hflex testimonials-2-intro">
-							<div class="testimonials-page-text-wrapper">
-								<div class="clip">
-									<h2 class="testimonial-text-home-2">
-										@Localizer["reality"]
-									</h2>
-								</div>
-							</div>
-							<div class="w-layout-vflex testimonials-member-wrapper">
-								<div class="clip">
-									<div class="w-layout-vflex vertical-20 mobile-flex-hor">
-										<img src="~/images/member-photo-9.webp" loading="lazy" width="132" alt="photo" class="testimonials-image small" />
-										<div class="position-testimonials">
-											<div class="upper-text-600">Rebecca, <span class="gray-color">@Localizer["Urban"]</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="reviews-slide w-slide">
-						<div class="w-layout-hflex testimonials-2-intro">
-							<div class="testimonials-page-text-wrapper">
-								<div class="clip">
-									<h2 class="testimonial-text-home-2">
-										@Localizer["stands out"]
-									</h2>
-								</div>
-							</div>
-							<div class="w-layout-vflex testimonials-member-wrapper">
-								<div class="clip">
-									<div class="w-layout-vflex vertical-20 mobile-flex-hor">
-										<img src="~/images/member-photo.webp" loading="lazy" width="132" alt="photo" class="testimonials-image small" />
-										<div class="position-testimonials">
-											<div class="upper-text-600">Anna, <span class="gray-color">@Localizer["Flower"]</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slider-2-arrow w-slider-arrow-left">
-					<img src="~/images/group-201-20-2-.svg" loading="lazy" alt="icon" />
-				</div>
-				<div class="slider-2-arrow right w-slider-arrow-right">
-					<img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" />
-				</div>
-				<div class="hidden w-slider-nav w-round w-num"></div>
-			</div>
-		</div>
-	</div>
+    <div class="w-layout-blockcontainer base-container w-container">
+        <div class="w-layout-vflex home-2-testimonials">
+            <div class="home-2-reviews-slider w-slider" data-autoplay="false" data-hide-arrows="false" data-disable-swipe="false">
+                <div class="home-2-testimonials-mask-copy w-slider-mask">
+                    <div class="reviews-slide w-slide">
+                        <div class="w-layout-hflex testimonials-2-intro">
+                            <div class="testimonials-page-text-wrapper">
+                                <div class="clip">
+                                    <h2 class="testimonial-text-home-2">
+                                        @Localizer["vision"]
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="w-layout-vflex testimonials-member-wrapper">
+                                <div class="clip">
+                                    <div class="w-layout-vflex vertical-20 mobile-flex-hor">
+                                        <img src="~/images/rectangle-2064-20-1-.webp" loading="lazy" width="132" alt="man" class="testimonials-image small" />
+                                        <div class="position-testimonials">
+                                            <div class="upper-text-600">Martin, <span class="gray-color">@Localizer["CEO"]</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slide w-slide">
+                        <div class="w-layout-hflex testimonials-2-intro">
+                            <div class="testimonials-page-text-wrapper">
+                                <div class="clip">
+                                    <h2 class="testimonial-text-home-2">
+                                        @Localizer["team understood"]
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="w-layout-vflex testimonials-member-wrapper">
+                                <div class="clip">
+                                    <div class="w-layout-vflex vertical-20 mobile-flex-hor">
+                                        <img src="~/images/member-photo-2.webp" loading="lazy" width="132" alt="photo" class="testimonials-image small" />
+                                        <div class="position-testimonials">
+                                            <div class="upper-text-600">Daniel, <span class="gray-color" @Localizer[">AZS"]</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slide w-slide">
+                        <div class="w-layout-hflex testimonials-2-intro">
+                            <div class="testimonials-page-text-wrapper">
+                                <div class="clip">
+                                    <h2 class="testimonial-text-home-2">
+                                        @Localizer["reality"]
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="w-layout-vflex testimonials-member-wrapper">
+                                <div class="clip">
+                                    <div class="w-layout-vflex vertical-20 mobile-flex-hor">
+                                        <img src="~/images/member-photo-9.webp" loading="lazy" width="132" alt="photo" class="testimonials-image small" />
+                                        <div class="position-testimonials">
+                                            <div class="upper-text-600">Rebecca, <span class="gray-color">@Localizer["Urban"]</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slide w-slide">
+                        <div class="w-layout-hflex testimonials-2-intro">
+                            <div class="testimonials-page-text-wrapper">
+                                <div class="clip">
+                                    <h2 class="testimonial-text-home-2">
+                                        @Localizer["stands out"]
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="w-layout-vflex testimonials-member-wrapper">
+                                <div class="clip">
+                                    <div class="w-layout-vflex vertical-20 mobile-flex-hor">
+                                        <img src="~/images/member-photo.webp" loading="lazy" width="132" alt="photo" class="testimonials-image small" />
+                                        <div class="position-testimonials">
+                                            <div class="upper-text-600">Anna, <span class="gray-color">@Localizer["Flower"]</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-2-arrow w-slider-arrow-left">
+                    <img src="~/images/group-201-20-2-.svg" loading="lazy" alt="icon" />
+                </div>
+                <div class="slider-2-arrow right w-slider-arrow-right">
+                    <img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" />
+                </div>
+                <div class="hidden w-slider-nav w-round w-num"></div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="section dark-bg-without-bottom">
-	<div class="w-layout-blockcontainer base-container w-container">
-		<div class="w-layout-hflex cta-wrapper">
-			<div class="w-layout-hflex subtitle dark">
-				<div>Contact us</div>
-				<div class="dot white"></div>
-			</div>
-			<div class="w-layout-vflex cta-right">
-				<div class="cta-text-wrapper">
-					<h2 class="text-white">
-						<span class="text-span-image">.</span>@Localizer["ready"]
-						<span class="gray-color">@Localizer["ourteam"]
-					</h2>
-					<div class="cta-video-absolute w-background-video w-background-video-atom">
-						<video style='background-image:url("~/images/cta-poster-00001.jpg")' muted playsinline data-object-fit="cover" autoplay loop>
-							<source src="~/images/cta-transcode.mp4" type="video/mp4" />
-							<source src="~/images/cta-transcode.webm" type="video/webm" />
-						</video>
-					</div>
-				</div>
-				<a href="~/contact-us" class="primary-button-white w-inline-block">
-					<div>@Localizer["Discover"]</div>
-					<div class="clip">
-						<div class="clip-icon-wrapper">
-							<img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" />
-						</div>
-						<div class="clip-icon-wrapper right">
-							<img src="~/images/group-201.svg" loading="lazy" alt="icon" class="btn-icon" />
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
+    <div class="w-layout-blockcontainer base-container w-container">
+        <div class="w-layout-hflex cta-wrapper">
+            <div class="w-layout-hflex subtitle dark">
+                <div>Contact us</div>
+                <div class="dot white"></div>
+            </div>
+            <div class="w-layout-vflex cta-right">
+                <div class="cta-text-wrapper">
+                    <h2 class="text-white">
+                        <span class="text-span-image">.</span>@Localizer["ready"]
+                        <span class="gray-color">@Localizer["ourteam"]
+                    </h2>
+                    <div class="cta-video-absolute w-background-video w-background-video-atom">
+                        <video style='background-image:url("~/images/cta-poster-00001.jpg")' muted playsinline data-object-fit="cover" autoplay loop>
+                            <source src="~/images/cta-transcode.mp4" type="video/mp4" />
+                            <source src="~/images/cta-transcode.webm" type="video/webm" />
+                        </video>
+                    </div>
+                </div>
+                <a href="~/contact-us" class="primary-button-white w-inline-block">
+                    <div>@Localizer["Discover"]</div>
+                    <div class="clip">
+                        <div class="clip-icon-wrapper">
+                            <img src="~/images/group-201-20-1-.svg" loading="lazy" alt="icon" class="btn-icon" />
+                        </div>
+                        <div class="clip-icon-wrapper right">
+                            <img src="~/images/group-201.svg" loading="lazy" alt="icon" class="btn-icon" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>

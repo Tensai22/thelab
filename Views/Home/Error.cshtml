@@ -1,4 +1,6 @@
-﻿@model string
+﻿@{
+    ViewData["Title"] = "Error";
+}
 
 <!-- Contact Form Area Start -->
 <section class="contact-form-area pt-90">
@@ -6,7 +8,7 @@
         <div class="row">
             <div class="col-md-8">
                 <p>Oops, something went wrong</p>
-                <h6>@Model</h6>
+                <h6>@ViewData["ErrorMessage"]</h6>
             </div>
         </div>
     </div>
